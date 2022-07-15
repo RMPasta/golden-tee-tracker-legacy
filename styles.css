@@ -1,0 +1,48 @@
+body {
+    display: flex-box;
+    background-color: lightcyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    display: flex;
+    font-size: 3em;
+    color: midnightblue;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    font-size: 2em;
+    color: midnightblue;
+    justify-content: center;
+}
+
+button {
+    height: 6em;
+    width: 9em;
+    border: 1px solid darkcyan;
+    border-radius: 2em;
+    background-color: cornflowerblue;
+    color: midnightblue;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: midnightblue;
+    color: white;
+    cursor: pointer;
+}
+
+button:active {
+    margin: .03em .08em;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#back {
+    margin: 5em 5em;
+}
