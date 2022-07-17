@@ -21,11 +21,12 @@ p {
 button {
     height: 6em;
     width: 9em;
-    border: 1px solid darkcyan;
+    border: 1px solid midnightblue;
     border-radius: 2em;
     background-color: cornflowerblue;
     color: midnightblue;
     font-size: 1em;
+    margin: .1em .1em;
 }
 
 button:hover {
@@ -35,7 +36,9 @@ button:hover {
 }
 
 button:active {
-    margin: .03em .08em;
+    height: 5.9em;
+    width: 8.9em;
+    margin: .15em .12em;
 }
 
 #buttons {
@@ -43,6 +46,8 @@ button:active {
     justify-content: space-evenly;
 }
 
-#back {
-    margin: 5em 5em;
+#back, #back2, #back3, #back4, #back5 {
+    position: fixed;
+    top: 0;
+    left: 0;
 }

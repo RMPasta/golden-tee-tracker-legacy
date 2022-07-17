@@ -3,19 +3,52 @@ let ninetyNine = document.getElementById('99');
 let twoK = document.getElementById('2K');
 let classic = document.getElementById('classic');
 
-let course1 = document.getElementById('course1');
-let course2 = document.getElementById('course2');
-let course3 = document.getElementById('course3');
-let course4 = document.getElementById('course4');
+let arbor = document.getElementById('arbor');
+let bayou = document.getElementById('bayou');
+let palm = document.getElementById('palm');
+let aspen = document.getElementById('aspen');
+let coconut = document.getElementById('coconut');
+let rancho = document.getElementById('rancho');
+let stone = document.getElementById('stone');
+let sea = document.getElementById('sea');
+let coyote = document.getElementById('coyote');
+let mountain = document.getElementById('mountain');
+let anchor = document.getElementById('anchor');
+let scorpian = document.getElementById('scorpian');
+
+
+let strokes = document.getElementById('strokes');
+let speed = document.getElementById('speed');
 
 let select = document.getElementById('select');
 let gameSelected = document.getElementById('gameSelected');
+let courseSelected = document.getElementById('courseSelected');
+let back = document.getElementById('back');
 
-course1.hidden = true;
-course2.hidden = true;
-course3.hidden = true;
-course4.hidden = true;
+arbor.hidden = true;
+bayou.hidden = true;
+palm.hidden = true;
+aspen.hidden = true;
+coconut.hidden = true;
+rancho.hidden = true;
+stone.hidden = true;
+sea.hidden = true;
+coyote.hidden = true;
+mountain.hidden = true;
+anchor.hidden = true;
+scorpian.hidden = true;
 
+
+back.hidden = true;
+back2.hidden = true;
+back3.hidden = true;
+back4.hidden = true;
+back5.hidden = true;
+
+strokes.hidden = true;
+speed.hidden = true;
+
+//game select clicks
 
 ninetyEight.onclick = function () {
     ninetyEight.hidden = true;
@@ -23,10 +56,12 @@ ninetyEight.onclick = function () {
     twoK.hidden = true;
     classic.hidden = true;
 
-    course1.hidden = false;
-    course2.hidden = false;
-    course3.hidden = false;
-    course4.hidden = false;
+    arbor.hidden = false;
+    bayou.hidden = false;
+    palm.hidden = false;
+    
+
+    back.hidden = false;
 
     select.innerHTML = 'Select Course:'
     gameSelected.innerHTML = '98'
@@ -38,10 +73,11 @@ ninetyNine.onclick = function () {
     twoK.hidden = true;
     classic.hidden = true;
 
-    course1.hidden = false;
-    course2.hidden = false;
-    course3.hidden = false;
-    course4.hidden = false;
+    aspen.hidden = false;
+    coconut.hidden = false;
+    rancho.hidden = false;
+
+    back.hidden = false;
 
     select.innerHTML = 'Select Course:'
     gameSelected.innerHTML = '99'
@@ -53,10 +89,11 @@ twoK.onclick = function () {
     twoK.hidden = true;
     classic.hidden = true;
 
-    course1.hidden = false;
-    course2.hidden = false;
-    course3.hidden = false;
-    course4.hidden = false;
+    stone.hidden = false;
+    sea.hidden = false;
+    coyote.hidden = false;
+
+    back.hidden = false;
 
     select.innerHTML = 'Select Course:'
     gameSelected.innerHTML = '2K'
@@ -68,26 +105,299 @@ classic.onclick = function () {
     twoK.hidden = true;
     classic.hidden = true;
 
-    course1.hidden = false;
-    course2.hidden = false;
-    course3.hidden = false;
-    course4.hidden = false;
+    mountain.hidden = false;
+    anchor.hidden = false;
+    scorpian.hidden = false;
+
+    back.hidden = false;
 
     select.innerHTML = 'Select Course:'
     gameSelected.innerHTML = 'Classic'
 }
 
+// 98 course selection clicks
+arbor.onclick = function () {
+
+    arbor.hidden = true;
+    bayou.hidden = true;
+    palm.hidden = true;
+
+    strokes.hidden = false;
+    speed.hidden = false;
+
+    back.hidden = true;
+    back2.hidden = false;
+
+    select.innerHTML = 'Select Mode:';
+    courseSelected.innerHTML = 'Arbor Hill';
+}
+
+bayou.onclick = function () {
+
+    arbor.hidden = true;
+    bayou.hidden = true;
+    palm.hidden = true;
+
+    strokes.hidden = false;
+    speed.hidden = false;
+
+    back.hidden = true;
+    back2.hidden = false;
+
+    select.innerHTML = 'Select Mode:'
+    courseSelected.innerHTML = 'Bayou Bend';
+}
+
+palm.onclick = function () {
+
+    arbor.hidden = true;
+    bayou.hidden = true;
+    palm.hidden = true;
+
+    strokes.hidden = false;
+    speed.hidden = false;
+
+    back.hidden = true;
+    back2.hidden = false;
+
+    select.innerHTML = 'Select Mode:'
+    courseSelected.innerHTML = 'Palm Grove';
+}
+
+// 99 course select
+aspen.onclick = function () {
+
+    aspen.hidden = true;
+    coconut.hidden = true;
+    rancho.hidden = true;
+
+    strokes.hidden = false;
+    speed.hidden = false;
+
+    back.hidden = true;
+    back3.hidden = false;
+
+    select.innerHTML = 'Select Mode:';
+    courseSelected.innerHTML = 'Aspen Lake';
+}
+
+coconut.onclick = function () {
+
+    aspen.hidden = true;
+    coconut.hidden = true;
+    rancho.hidden = true;
+
+    strokes.hidden = false;
+    speed.hidden = false;
+
+    back.hidden = true;
+    back3.hidden = false;
+
+    select.innerHTML = 'Select Mode:'
+    courseSelected.innerHTML = 'Coconut Cove';
+}
+
+rancho.onclick = function () {
+
+    aspen.hidden = true;
+    coconut.hidden = true;
+    rancho.hidden = true;
+
+    strokes.hidden = false;
+    speed.hidden = false;
+
+    back.hidden = true;
+    back3.hidden = false;
+
+    select.innerHTML = 'Select Mode:'
+    courseSelected.innerHTML = 'Rancho Saguaro';
+}
+// 2k course select
+stone.onclick = function () {
+
+    stone.hidden = true;
+    sea.hidden = true;
+    coyote.hidden = true;
+
+    strokes.hidden = false;
+    speed.hidden = false;
+
+    back.hidden = true;
+    back4.hidden = false;
+
+    select.innerHTML = 'Select Mode:';
+    courseSelected.innerHTML = 'Stone Valley';
+}
+
+sea.onclick = function () {
+
+    stone.hidden = true;
+    sea.hidden = true;
+    coyote.hidden = true;
+
+    strokes.hidden = false;
+    speed.hidden = false;
+
+    back.hidden = true;
+    back4.hidden = false;
+
+    select.innerHTML = 'Select Mode:'
+    courseSelected.innerHTML = 'Sea Haven';
+}
+
+coyote.onclick = function () {
+
+    stone.hidden = true;
+    sea.hidden = true;
+    coyote.hidden = true;
+
+    strokes.hidden = false;
+    speed.hidden = false;
+
+    back.hidden = true;
+    back4.hidden = false;
+
+    select.innerHTML = 'Select Mode:'
+    courseSelected.innerHTML = 'Coyote Run';
+}
+// classic course select
+mountain.onclick = function () {
+
+    mountain.hidden = true;
+    anchor.hidden = true;
+    scorpian.hidden = true;
+
+    strokes.hidden = false;
+    speed.hidden = false;
+
+    back.hidden = true;
+    back5.hidden = false;
+
+    select.innerHTML = 'Select Mode:';
+    courseSelected.innerHTML = 'Mountain Springs';
+}
+
+anchor.onclick = function () {
+
+    mountain.hidden = true;
+    anchor.hidden = true;
+    scorpian.hidden = true;
+
+    strokes.hidden = false;
+    speed.hidden = false;
+
+    back.hidden = true;
+    back5.hidden = false;
+
+    select.innerHTML = 'Select Mode:';
+    courseSelected.innerHTML = 'Anchor Cove';
+}
+
+scorpian.onclick = function () {
+
+    mountain.hidden = true;
+    anchor.hidden = true;
+    scorpian.hidden = true;
+
+    strokes.hidden = false;
+    speed.hidden = false;
+
+    back.hidden = true;
+    back5.hidden = false;
+
+    select.innerHTML = 'Select Mode:';
+    courseSelected.innerHTML = 'Scorpion Bend';
+}
+// back button functionality
 back.onclick = function () {
     ninetyEight.hidden = false;
     ninetyNine.hidden = false;
     twoK.hidden = false;
     classic.hidden = false;
 
-    course1.hidden = true;
-    course2.hidden = true;
-    course3.hidden = true;
-    course4.hidden = true;
+    arbor.hidden = true;
+    bayou.hidden = true;
+    palm.hidden = true;
+    aspen.hidden = true;
+    coconut.hidden = true;
+    rancho.hidden = true;
+    stone.hidden = true;
+    sea.hidden = true;
+    coyote.hidden = true;
+    mountain.hidden = true;
+    anchor.hidden = true;
+    scorpian.hidden = true;
 
-    select.innerHTML = 'Select Game:'
-    gameSelected.innerHTML = ''
+    strokes.hidden = true;
+    speed.hidden = true;
+
+    back.hidden = true;
+    
+
+    select.innerHTML = 'Select Game:';
+    gameSelected.innerHTML = '';
+}
+
+// 98 back button
+back2.onclick = function () {
+
+    arbor.hidden = false;
+    bayou.hidden = false;
+    palm.hidden = false;
+
+    strokes.hidden = true;
+    speed.hidden = true;
+
+    back2.hidden = true;
+    back.hidden = false;
+
+    select.innerHTML = 'Select Course:';
+    courseSelected.innerHTML = '';
+}
+//99 back button
+back3.onclick = function () {
+    
+    aspen.hidden = false;
+    coconut.hidden = false;
+    rancho.hidden = false;
+
+    strokes.hidden = true;
+    speed.hidden = true;
+
+    back3.hidden = true;
+    back.hidden = false;
+
+    select.innerHTML = 'Select Course:';
+    courseSelected.innerHTML = '';
+}
+
+back4.onclick = function () {
+    
+    stone.hidden = false;
+    sea.hidden = false;
+    coyote.hidden = false;
+
+    strokes.hidden = true;
+    speed.hidden = true;
+
+    back4.hidden = true;
+    back.hidden = false;
+
+    select.innerHTML = 'Select Course:';
+    courseSelected.innerHTML = '';
+}
+back5.onclick = function () {
+    
+    mountain.hidden = false;
+    anchor.hidden = false;
+    scorpian.hidden = false;
+
+    strokes.hidden = true;
+    speed.hidden = true;
+
+    back5.hidden = true;
+    back.hidden = false;
+
+    select.innerHTML = 'Select Course:';
+    courseSelected.innerHTML = '';
 }
