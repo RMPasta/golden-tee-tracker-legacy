@@ -215,7 +215,9 @@ button:active {
   .tablebtn {
     display: none;
   }
-
+  #time {
+    font-size: 1rem;
+  }
   @media only screen and (max-width: 650px) {
         #firstBar {
         word-spacing: 2.6rem;
@@ -261,11 +263,11 @@ button:active {
         }
   }
 
-  @media only screen and (max-width: 1600px) and (min-width: 1300px) {
+  @media only screen and (min-width: 1300px) {
     #firstBar {
-    word-spacing: 9.6rem;
+    word-spacing: 12.5rem;
     }
     #secondBar {
-    word-spacing: 9rem;
+    word-spacing: 12rem;
     }
 }

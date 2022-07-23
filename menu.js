@@ -47,6 +47,7 @@ back2.hidden = true;
 back3.hidden = true;
 back4.hidden = true;
 back5.hidden = true;
+back6.hidden = true;
 
 strokes.hidden = true;
 speed.hidden = true;
@@ -314,6 +315,7 @@ scorpian.onclick = function () {
 }
 //end course select buttons
 //begin game mode select buttons
+//STROKE PLAY
 strokes.onclick = function () {
         table.style.display = 'grid';
         strokes.hidden = true;
@@ -324,8 +326,24 @@ strokes.onclick = function () {
         back3.hidden = true;
         back4.hidden = true;
         back5.hidden = true;
-        
+        back6.hidden = false;
 }
+//END STROKE PLAY
+
+
+//SPEED RUN
+speed.onclick = function () {
+    speedRunDisplay.style.display = 'flex';
+    strokes.hidden = true;
+    speed.hidden = true;
+    modeSelected.innerText = 'Speed Run';
+    select.style.display = 'none';
+    back2.hidden = true;
+    back3.hidden = true;
+    back4.hidden = true;
+    back5.hidden = true;
+    back6.hidden = false;
+}     
 //end game mode select buttons
 // back button functionality
 back.onclick = function () {
@@ -419,4 +437,7 @@ back5.onclick = function () {
 
     select.innerHTML = 'Select Course:';
     courseSelected.innerHTML = '';
+}
+back6.onclick = function () {
+    window.location.reload();
 }

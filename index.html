@@ -5,24 +5,35 @@
         <link rel="stylesheet" href="styles.css">
         <script src="menu.js" defer></script>
         <script src="table.js" defer></script>
+        <script src="timer.js" defer></script>
     </head>
 
     <body>
+
         <!--back buttons-->
+
         <button class="button" id="back">Back</button>
         <button class="button" id="back2">Back</button>
         <button class="button" id="back3">Back</button>
         <button class="button" id="back4">Back</button>
         <button class="button" id="back5">Back</button>
+        <button class="button" id="back6">Back</button>
+
+        <!-- end back buttons-->
+
         <h1>Golden Tee Tracker</h1>
         <p id="select">Select Game:</p>
+
         <!--game select buttons-->
+
         <section id="buttons">
             <button class="button" id="98">98</button>
             <button class="button" id="99">99</button>
             <button class="button" id="2K">2K</button>
             <button class="button" id="classic">Classic</button>
+
             <!--course select buttons-->
+
             <button class="button" id="arbor">Arbor Hill</button>
             <button class="button" id="bayou">Bayou Bend</button>
             <button class="button" id="palm">Palm Grove</button>
@@ -35,7 +46,9 @@
             <button class="button" id="mountain">Mountain Springs</button>
             <button class="button" id="anchor">Anchor Cove</button>
             <button class="button" id="scorpian">Scorpian Bend</button>
+
             <!--game mode select buttons-->
+
             <button class="button" id="strokes">Stroke Play</button>
             <button class="button" id="speed">Speed Run</button>
         </section>
@@ -43,6 +56,14 @@
         <p id="courseSelected"></p>
         <p id="modeSelected"></p>
         <p id="playersSelected"></p>
+
+        <!--end menu section-->
+
+
+
+
+        <!--begin stroke play section-->
+
         <div id="wrapper" class="wrapper">
             <!--cross bar 1-->
             <div id="firstBar">1 2 3 4 5 6 7 8 9</div>
@@ -199,5 +220,25 @@
                 </div>
             </div>
           </div>
+          <!--end of stroke play section-->
+
+
+
+
+          <!--beginning speed run section-->
+
+        <div id="speedRunDisplay">  
+            <p id="time"></p>
+            <p id="totalTime"></p>
+
+            <div id="stopwatch">
+                00:00
+            </div>
+
+            <ul id="buttons">
+                <li><button id="theButton" onclick="startTimer()"></button></li>
+            </ul>
+            <p id="announce"></p>
+        </div>
     </body>
 </html>
