@@ -3,41 +3,201 @@
     <head>
         <title>GT</title>
         <link rel="stylesheet" href="styles.css">
-        <script src="script.js" defer></script>
+        <script src="menu.js" defer></script>
+        <script src="table.js" defer></script>
     </head>
 
     <body>
-        <button id="back">Back</button>
-        <button id="back2">Back</button>
-        <button id="back3">Back</button>
-        <button id="back4">Back</button>
-        <button id="back5">Back</button>
+        <!--back buttons-->
+        <button class="button" id="back">Back</button>
+        <button class="button" id="back2">Back</button>
+        <button class="button" id="back3">Back</button>
+        <button class="button" id="back4">Back</button>
+        <button class="button" id="back5">Back</button>
         <h1>Golden Tee Tracker</h1>
         <p id="select">Select Game:</p>
+        <!--game select buttons-->
         <section id="buttons">
-            <button id="98">98</button>
-            <button id="99">99</button>
-            <button id="2K">2K</button>
-            <button id="classic">Classic</button>
-
-            <button id="arbor">Arbor Hill</button>
-            <button id="bayou">Bayou Bend</button>
-            <button id="palm">Palm Grove</button>
-            <button id="aspen">Aspen Lake</button>
-            <button id="coconut">Coconut Cove</button>
-            <button id="rancho">Rancho Saguaro</button>
-            <button id="stone">Stone Valley</button>
-            <button id="sea">Sea Haven</button>
-            <button id="coyote">Coyote Run</button>
-            <button id="mountain">Mountain Springs</button>
-            <button id="anchor">Anchor Cove</button>
-            <button id="scorpian">Scorpian Bend</button>
-
-            <button id="strokes">Stroke Play</button>
-            <button id="speed">Speed Run</button>
+            <button class="button" id="98">98</button>
+            <button class="button" id="99">99</button>
+            <button class="button" id="2K">2K</button>
+            <button class="button" id="classic">Classic</button>
+            <!--course select buttons-->
+            <button class="button" id="arbor">Arbor Hill</button>
+            <button class="button" id="bayou">Bayou Bend</button>
+            <button class="button" id="palm">Palm Grove</button>
+            <button class="button" id="aspen">Aspen Lake</button>
+            <button class="button" id="coconut">Coconut Cove</button>
+            <button class="button" id="rancho">Rancho Saguaro</button>
+            <button class="button" id="stone">Stone Valley</button>
+            <button class="button" id="sea">Sea Haven</button>
+            <button class="button" id="coyote">Coyote Run</button>
+            <button class="button" id="mountain">Mountain Springs</button>
+            <button class="button" id="anchor">Anchor Cove</button>
+            <button class="button" id="scorpian">Scorpian Bend</button>
+            <!--game mode select buttons-->
+            <button class="button" id="strokes">Stroke Play</button>
+            <button class="button" id="speed">Speed Run</button>
         </section>
         <p id="gameSelected"></p>
         <p id="courseSelected"></p>
-        
+        <p id="modeSelected"></p>
+        <p id="playersSelected"></p>
+        <div id="wrapper" class="wrapper">
+            <!--cross bar 1-->
+            <div id="firstBar">1 2 3 4 5 6 7 8 9</div>
+            <!--cross bar 2-->
+            <div id="secondBar">10 11 12 13 14 15 16 17 18</div>
+            <!--side bar 1-->
+            <div id="playerColumnOne">Player: Blue<br>Total Score: <div id="totalScore"></div></div>
+            <div class="totalScore"></div>
+            <!--side bar 2-->
+            <div id="playerColumnTwo">Player: Blue<br>Total Score: <div id="totalScoreCopy"></div></div>
+            <!--start grid-->
+            <div class="one">
+                <div class="numberBox">
+                    <button id="incOne">^</button>
+                    <div id="scoreOne">0</div>
+                    <button id="decOne">v</button>
+                    <button id="submitOne">Submit</button>
+                </div>
+            </div>
+            <div class="two">
+                <div class="numberBox">
+                    <button class="tablebtn" id="incTwo">^</button>
+                    <div id="scoreTwo">0</div>
+                    <button class="tablebtn" id="decTwo">v</button>
+                    <button class="tablebtn" id="submitTwo">Submit</button>
+                </div>
+            </div>
+            <div class="three">
+                <div class="numberBox">
+                    <button class="tablebtn" id="incThree">^</button>
+                    <div id="scoreThree">0</div>
+                    <button class="tablebtn" id="decThree">v</button>
+                    <button class="tablebtn" id="submitThree">Submit</button>
+                </div>
+            </div>
+            <div class="four">
+                <div class="numberBox">
+                    <button class="tablebtn" id="incFour">^</button>
+                    <div id="scoreFour">0</div>
+                    <button class="tablebtn" id="decFour">v</button>
+                    <button class="tablebtn" id="submitFour">Submit</button>
+                </div>
+            </div>
+            <div class="five">
+                <div class="numberBox">
+                    <button class="tablebtn" id="incFive">^</button>
+                    <div id="scoreFive">0</div>
+                    <button class="tablebtn" id="decFive">v</button>
+                    <button class="tablebtn" id="submitFive">Submit</button>
+                </div>
+            </div>
+            <div class="six">
+                <div class="numberBox">
+                    <button class="tablebtn" id="incSix">^</button>
+                    <div id="scoreSix">0</div>
+                    <button class="tablebtn" id="decSix">v</button>
+                    <button class="tablebtn" id="submitSix">Submit</button>
+                </div>                
+            </div>
+            <div class="seven">
+                <div class="numberBox">
+                    <button class="tablebtn" id="incSeven">^</button>
+                    <div id="scoreSeven">0</div>
+                    <button class="tablebtn" id="decSeven">v</button>
+                    <button class="tablebtn" id="submitSeven">Submit</button>
+                </div>
+            </div>
+            <div class="eight">
+                <div class="numberBox">
+                    <button class="tablebtn" id="incEight">^</button>
+                    <div id="scoreEight">0</div>
+                    <button class="tablebtn" id="decEight">v</button>
+                    <button class="tablebtn" id="submitEight">Submit</button>
+                </div>
+            </div>
+            <div class="nine">
+                <div class="numberBox">
+                    <button class="tablebtn" id="incNine">^</button>
+                    <div id="scoreNine">0</div>
+                    <button class="tablebtn" id="decNine">v</button>
+                    <button class="tablebtn" id="submitNine">Submit</button>
+                </div>
+            </div>
+            <div class="ten">
+                <div class="numberBox">
+                    <button class="tablebtn" id="incTen">^</button>
+                    <div id="scoreTen">0</div>
+                    <button class="tablebtn" id="decTen">v</button>
+                    <button class="tablebtn" id="submitTen">Submit</button>
+                </div>
+            </div>
+            <div class="eleven">
+                <div class="numberBox">
+                    <button class="tablebtn" id="incEleven">^</button>
+                    <div id="scoreEleven">0</div>
+                    <button class="tablebtn" id="decEleven">v</button>
+                    <button class="tablebtn" id="submitEleven">Submit</button>
+                </div>
+            </div>
+            <div class="twelve">
+                <div class="numberBox">
+                    <button class="tablebtn" id="incTwelve">^</button>
+                    <div id="scoreTwelve">0</div>
+                    <button class="tablebtn" id="decTwelve">v</button>
+                    <button class="tablebtn" id="submitTwelve">Submit</button>
+                </div>
+            </div>
+            <div class="thirteen">
+                <div class="numberBox">
+                    <button class="tablebtn" id="incThirteen">^</button>
+                    <div id="scoreThirteen">0</div>
+                    <button class="tablebtn" id="decThirteen">v</button>
+                    <button class="tablebtn" id="submitThirteen">Submit</button>
+                </div>
+            </div>
+            <div class="fourteen">
+                <div class="numberBox">
+                    <button class="tablebtn" id="incFourteen">^</button>
+                    <div id="scoreFourteen">0</div>
+                    <button class="tablebtn" id="decFourteen">v</button>
+                    <button class="tablebtn" id="submitFourteen">Submit</button>
+                </div>
+            </div>
+            <div class="fifteen">
+                <div class="numberBox">
+                    <button class="tablebtn" id="incFifteen">^</button>
+                    <div id="scoreFifteen">0</div>
+                    <button class="tablebtn" id="decFifteen">v</button>
+                    <button class="tablebtn" id="submitFifteen">Submit</button>
+                </div>                
+            </div>
+            <div class="sixteen">
+                <div class="numberBox">
+                    <button class="tablebtn" id="incSixteen">^</button>
+                    <div id="scoreSixteen">0</div>
+                    <button class="tablebtn" id="decSixteen">v</button>
+                    <button class="tablebtn" id="submitSixteen">Submit</button>
+                </div>
+            </div>
+            <div class="seventeen">
+                <div class="numberBox">
+                    <button class="tablebtn" id="incSeventeen">^</button>
+                    <div id="scoreSeventeen">0</div>
+                    <button class="tablebtn" id="decSeventeen">v</button>
+                    <button class="tablebtn" id="submitSeventeen">Submit</button>
+                </div>
+            </div>
+            <div class="eighteen">
+                <div class="numberBox">
+                    <button class="tablebtn" id="incEighteen">^</button>
+                    <div id="scoreEighteen">0</div>
+                    <button class="tablebtn" id="decEighteen">v</button>
+                    <button class="tablebtn" id="submitEighteen">Submit</button>
+                </div>
+            </div>
+          </div>
     </body>
 </html>

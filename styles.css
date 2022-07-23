@@ -1,44 +1,67 @@
 body {
     display: flex-box;
-    background-color: lightcyan;
+    background-color: #f1fcf1;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1 {
     display: flex;
     font-size: 3em;
-    color: midnightblue;
+    color: #478547;
     justify-content: center;
 }
 
 p {
     display: flex;
     font-size: 2em;
-    color: midnightblue;
+    color: #478547;
     justify-content: center;
 }
 
-button {
-    height: 6em;
-    width: 9em;
-    border: 1px solid midnightblue;
-    border-radius: 2em;
-    background-color: cornflowerblue;
-    color: midnightblue;
+.button {
+    height: 3rem;
+    width: 5rem;
+    border: 1px solid #478547;
+    border-radius: 1em;
+    background-color: #85E085;
+    color: #478547;
     font-size: 1em;
-    margin: .1em .1em;
+    margin: .05em .05em;
+}
+
+.button:hover {
+    background-color: #3c6f3c;
+    color: white;
+    cursor: pointer;
+}
+
+.button:active {
+    height: 2.8rem;
+    width: 4.9rem;
+
+}
+
+button {
+    height: auto;
+    width: auto;
+    border: 1px solid #478547;
+    border-radius: .2em;
+    background-color: #85E085;
+    color: #478547;
+    font-size: 1em;
+    margin: .05em .05em;
 }
 
 button:hover {
-    background-color: midnightblue;
+    background-color: #3c6f3c;
     color: white;
     cursor: pointer;
 }
 
 button:active {
-    height: 5.9em;
-    width: 8.9em;
-    margin: .15em .12em;
+    height: 2.8;
+    width: 4.6;
+    margin: .08em .08em;
 }
 
 #buttons {
@@ -50,4 +73,199 @@ button:active {
     position: fixed;
     top: 0;
     left: 0;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+    gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .one {
+    background-color: #bbeebb;
+    grid-column: 2;
+    grid-row: 2 / 3;
+  }
+  .two {
+    background-color: #bbeebb;
+    grid-column: 3;
+    grid-row: 2 / 3;
+  }
+  .three {
+    background-color: #bbeebb;
+    grid-column: 4;
+    grid-row: 2 / 3;
+  }
+  .four {
+    background-color: #bbeebb;
+    grid-column: 5;
+    grid-row: 2 / 3;
+  }
+  .five {
+    background-color: #bbeebb;
+    grid-column: 6;
+    grid-row: 2 / 3;
+  }
+  .six {
+    background-color: #bbeebb;
+    grid-column: 7;
+    grid-row: 2 / 3;
+  }
+  .seven {
+    background-color: #bbeebb;
+    grid-column: 8;
+    grid-row: 2 / 3;
+  }
+  .eight {
+    background-color: #bbeebb;
+    grid-column: 9;
+    grid-row: 2 / 3;
+  }
+  .nine {
+    background-color: #bbeebb;
+    grid-column: 10;
+    grid-row: 2 / 3;
+  }
+    .ten {
+    background-color: #bbeebb;
+    grid-column: 2;
+    grid-row: 4 / 5;
+    }
+    .eleven {
+    background-color: #bbeebb;
+    grid-column: 3;
+    grid-row: 4 / 5;
+    }
+    .twelve {
+    background-color: #bbeebb;
+    grid-column: 4;
+    grid-row: 4 / 5;
+    }
+    .thirteen {
+    background-color: #bbeebb;
+    grid-column: 5;
+    grid-row: 4 / 5;
+    }
+    .fourteen {
+    background-color: #bbeebb;
+    grid-column: 6;
+    grid-row: 4 / 5;
+    height: auto;
+    width: auto;
+    }
+    .fifteen {
+    background-color: #bbeebb;
+    grid-column: 7;
+    grid-row: 4 / 5;
+    }
+    .sixteen {
+    background-color: #bbeebb;
+    grid-column: 8;
+    grid-row: 4 / 5;
+    }
+    .seventeen {
+    background-color: #bbeebb;
+    grid-column: 9;
+    grid-row: 4 / 5;
+    }
+    .eighteen {
+    background-color: #bbeebb;
+    grid-column: 10;
+    grid-row: 4 / 5;
+    }
+    #firstBar {
+    background-color: #85e085;
+    grid-column: 2 / 11;
+    grid-row: 1 / 1;
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: center;
+    word-spacing: 9rem;
+    }
+    #secondBar {
+    background-color: #85e085;
+    grid-column: 2 / 11;
+    grid-row: 3 / 3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    word-spacing: 8.4rem;
+    }
+    #playerColumnOne {
+        background-color: #adebad;
+        grid-column: 1;
+        grid-row: 2 / 2;
+        text-align: center;
+        line-height: 2rem;
+    }
+    #playerColumnTwo {
+        background-color: #adebad;
+        grid-column: 1;
+        grid-row: 4 / 4;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+  .numberBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .tablebtn {
+    display: none;
+  }
+
+  @media only screen and (max-width: 650px) {
+        #firstBar {
+        word-spacing: 2.6rem;
+        }
+        #secondBar {
+        word-spacing: 2.1rem;
+        }
+  }
+
+  @media only screen and (max-width: 920px) and (min-width: 650px) {
+        #firstBar {
+        word-spacing: 3.9rem;
+        }
+        #secondBar {
+        word-spacing: 3.3rem;
+        }
+  }
+
+  @media only screen and (max-width: 1100px) and (min-width: 920px) {
+    #firstBar {
+    word-spacing: 4.8rem;
+    }
+    #secondBar {
+    word-spacing: 4.2rem;
+    }
+}
+
+  @media only screen and (max-width: 1250px) and (min-width: 1100px) {
+        #firstBar {
+        word-spacing: 6rem;
+        }
+        #secondBar {
+        word-spacing: 5.4rem;
+        }
+  }
+
+  @media only screen and (max-width: 1400px) and (min-width: 1250px) {
+        #firstBar {
+        word-spacing: 7.8rem;
+        }
+        #secondBar {
+        word-spacing: 7rem;
+        }
+  }
+
+  @media only screen and (max-width: 1600px) and (min-width: 1300px) {
+    #firstBar {
+    word-spacing: 9.6rem;
+    }
+    #secondBar {
+    word-spacing: 9rem;
+    }
 }

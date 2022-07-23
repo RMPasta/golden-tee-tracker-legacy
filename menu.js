@@ -23,6 +23,8 @@ let speed = document.getElementById('speed');
 let select = document.getElementById('select');
 let gameSelected = document.getElementById('gameSelected');
 let courseSelected = document.getElementById('courseSelected');
+let modeSelected = document.getElementById('modeSelected');
+let playersSelected = document.getElementById('playersSelected');
 let back = document.getElementById('back');
 
 arbor.hidden = true;
@@ -39,6 +41,7 @@ anchor.hidden = true;
 scorpian.hidden = true;
 
 
+
 back.hidden = true;
 back2.hidden = true;
 back3.hidden = true;
@@ -48,8 +51,7 @@ back5.hidden = true;
 strokes.hidden = true;
 speed.hidden = true;
 
-//game select clicks
-
+//game select buttons
 ninetyEight.onclick = function () {
     ninetyEight.hidden = true;
     ninetyNine.hidden = true;
@@ -114,7 +116,7 @@ classic.onclick = function () {
     select.innerHTML = 'Select Course:'
     gameSelected.innerHTML = 'Classic'
 }
-
+//end game select
 // 98 course selection clicks
 arbor.onclick = function () {
 
@@ -163,8 +165,8 @@ palm.onclick = function () {
     select.innerHTML = 'Select Mode:'
     courseSelected.innerHTML = 'Palm Grove';
 }
-
-// 99 course select
+// end 98 course select
+// begin 99 course select
 aspen.onclick = function () {
 
     aspen.hidden = true;
@@ -212,7 +214,8 @@ rancho.onclick = function () {
     select.innerHTML = 'Select Mode:'
     courseSelected.innerHTML = 'Rancho Saguaro';
 }
-// 2k course select
+//end 99 course select
+// begin 2k course select
 stone.onclick = function () {
 
     stone.hidden = true;
@@ -260,7 +263,8 @@ coyote.onclick = function () {
     select.innerHTML = 'Select Mode:'
     courseSelected.innerHTML = 'Coyote Run';
 }
-// classic course select
+// end 2k course select
+// begin classic course select
 mountain.onclick = function () {
 
     mountain.hidden = true;
@@ -305,9 +309,24 @@ scorpian.onclick = function () {
     back.hidden = true;
     back5.hidden = false;
 
-    select.innerHTML = 'Select Mode:';
-    courseSelected.innerHTML = 'Scorpion Bend';
+    select.innerText = 'Select Mode:';
+    courseSelected.innerText = 'Scorpion Bend';
 }
+//end course select buttons
+//begin game mode select buttons
+strokes.onclick = function () {
+        table.style.display = 'grid';
+        strokes.hidden = true;
+        speed.hidden = true;
+        modeSelected.innerText = 'Stroke Play';
+        select.style.display = 'none';
+        back2.hidden = true;
+        back3.hidden = true;
+        back4.hidden = true;
+        back5.hidden = true;
+        
+}
+//end game mode select buttons
 // back button functionality
 back.onclick = function () {
     ninetyEight.hidden = false;
