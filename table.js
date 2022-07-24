@@ -3,96 +3,97 @@
 //increment button
 //decrement button
 //score to display
+//1
 let scoreDisplayOne = document.getElementById('scoreOne');
 let incOne = document.getElementById('incOne');
 let decOne = document.getElementById('decOne');
 let scoreOne = 0;
-//1
+//2
 let scoreDisplayTwo = document.getElementById('scoreTwo');
 let incTwo = document.getElementById('incTwo');
 let decTwo = document.getElementById('decTwo');
 let scoreTwo = 0;
-//2
+//3
 let scoreDisplayThree = document.getElementById('scoreThree');
 let incThree = document.getElementById('incThree');
 let decThree = document.getElementById('decThree');
 let scoreThree = 0;
-//3
+//4
 let scoreDisplayFour = document.getElementById('scoreFour');
 let incFour = document.getElementById('incFour');
 let decFour = document.getElementById('decFour');
 let scoreFour = 0;
-//4
+//5
 let scoreDisplayFive = document.getElementById('scoreFive');
 let incFive = document.getElementById('incFive');
 let decFive = document.getElementById('decFive');
 let scoreFive = 0;
-//5
+//6
 let scoreDisplaySix = document.getElementById('scoreSix');
 let incSix = document.getElementById('incSix');
 let decSix = document.getElementById('decSix');
 let scoreSix = 0;
-//6
+//7
 let scoreDisplaySeven = document.getElementById('scoreSeven');
 let incSeven = document.getElementById('incSeven');
 let decSeven = document.getElementById('decSeven');
 let scoreSeven = 0;
-//7
+//8
 let scoreDisplayEight = document.getElementById('scoreEight');
 let incEight = document.getElementById('incEight');
 let decEight = document.getElementById('decEight');
 let scoreEight = 0;
-//8
+//9
 let scoreDisplayNine = document.getElementById('scoreNine');
 let incNine = document.getElementById('incNine');
 let decNine = document.getElementById('decNine');
 let scoreNine = 0;
-//9
+//10
 let scoreDisplayTen = document.getElementById('scoreTen');
 let incTen = document.getElementById('incTen');
 let decTen = document.getElementById('decTen');
 let scoreTen = 0;
-//10
+//11
 let scoreDisplayEleven = document.getElementById('scoreEleven');
 let incEleven = document.getElementById('incEleven');
 let decEleven = document.getElementById('decEleven');
 let scoreEleven = 0;
-//11
+//12
 let scoreDisplayTwelve = document.getElementById('scoreTwelve');
 let incTwelve = document.getElementById('incTwelve');
 let decTwelve = document.getElementById('decTwelve');
 let scoreTwelve = 0;
-//12
+//13
 let scoreDisplayThirteen = document.getElementById('scoreThirteen');
 let incThirteen = document.getElementById('incThirteen');
 let decThirteen = document.getElementById('decThirteen');
 let scoreThirteen = 0;
-//13
+//14
 let scoreDisplayFourteen = document.getElementById('scoreFourteen');
 let incFourteen = document.getElementById('incFourteen');
 let decFourteen = document.getElementById('decFourteen');
 let scoreFourteen = 0;
-//14
+//15
 let scoreDisplayFifteen = document.getElementById('scoreFifteen');
 let incFifteen = document.getElementById('incFifteen');
 let decFifteen = document.getElementById('decFifteen');
 let scoreFifteen = 0;
-//15
+//16
 let scoreDisplaySixteen = document.getElementById('scoreSixteen');
 let incSixteen = document.getElementById('incSixteen');
 let decSixteen = document.getElementById('decSixteen');
 let scoreSixteen = 0;
-//16
+//17
 let scoreDisplaySeventeen = document.getElementById('scoreSeventeen');
 let incSeventeen = document.getElementById('incSeventeen');
 let decSeventeen = document.getElementById('decSeventeen');
 let scoreSeventeen = 0;
-//17
+//18
 let scoreDisplayEighteen = document.getElementById('scoreEighteen');
 let incEighteen = document.getElementById('incEighteen');
 let decEighteen = document.getElementById('decEighteen');
 let scoreEighteen = 0;
-//18
+//end cell buttons
 //all submit buttons
 let submitOne = document.getElementById('submitOne');
 let submitTwo = document.getElementById('submitTwo');
@@ -117,6 +118,9 @@ let totalScoreDisplay = document.getElementById('totalScore');
 let totalScoreDisplayCopy = document.getElementById('totalScoreCopy');
 let totalScoreDisplayFinal = document.getElementById('totalScoreFinal');
 let totalScore = 0;
+//second half of table 
+let secondHalf = document.getElementById('secondHalfTable');
+
 
 
 let table = document.getElementById('wrapper');
@@ -142,6 +146,15 @@ submitOne.onclick = function () {
     incTwo.style.display = 'flex';
     decTwo.style.display = 'flex';
     submitTwo.style.display = 'flex';
+
+    results.hole1 = scoreOne;
+    /*
+    for testing the final result functions, uncomment this code
+
+    incEighteen.style.display = 'flex';
+    decEighteen.style.display = 'flex';
+    submitEighteen.style.display = 'flex';
+    */
 }
 //2
 submitTwo.onclick = function () {
@@ -154,6 +167,10 @@ submitTwo.onclick = function () {
     incThree.style.display = 'flex';
     decThree.style.display = 'flex';
     submitThree.style.display = 'flex';
+
+    results.hole2 = scoreTwo;
+
+
 }
 //3
 submitThree.onclick = function () {
@@ -166,6 +183,8 @@ submitThree.onclick = function () {
     incFour.style.display = 'flex';
     decFour.style.display = 'flex';
     submitFour.style.display = 'flex';
+
+    results.hole3 = scoreThree;
 }
 //4
 submitFour.onclick = function () {
@@ -178,6 +197,8 @@ submitFour.onclick = function () {
     incFive.style.display = 'flex';
     decFive.style.display = 'flex';
     submitFive.style.display = 'flex';
+
+    results.hole4 = scoreFour;
 }
 //5
 submitFive.onclick = function () {
@@ -190,6 +211,8 @@ submitFive.onclick = function () {
     incSix.style.display = 'flex';
     decSix.style.display = 'flex';
     submitSix.style.display = 'flex';
+
+    results.hole5 = scoreFive;
 }
 //6
 submitSix.onclick = function () {
@@ -202,6 +225,8 @@ submitSix.onclick = function () {
     incSeven.style.display = 'flex';
     decSeven.style.display = 'flex';
     submitSeven.style.display = 'flex';
+
+    results.hole6 = scoreSix;
 }
 //7
 submitSeven.onclick = function () {
@@ -214,6 +239,8 @@ submitSeven.onclick = function () {
     incEight.style.display = 'flex';
     decEight.style.display = 'flex';
     submitEight.style.display = 'flex';
+
+    results.hole7 = scoreSeven;
 }
 //8
 submitEight.onclick = function () {
@@ -226,6 +253,8 @@ submitEight.onclick = function () {
     incNine.style.display = 'flex';
     decNine.style.display = 'flex';
     submitNine.style.display = 'flex';
+
+    results.hole8 = scoreEight;
 }
 //9
 submitNine.onclick = function () {
@@ -238,11 +267,12 @@ submitNine.onclick = function () {
     incTen.style.display = 'flex';
     decTen.style.display = 'flex';
     submitTen.style.display = 'flex';
+
+    results.hole9 = scoreNine;
 }
 //10
 submitTen.onclick = function () {
     totalScore += scoreTen;
-    totalScoreDisplay.innerText = totalScore;
     totalScoreDisplayCopy.innerText = totalScore;
     incTen.style.display = 'none';
     decTen.style.display = 'none';
@@ -250,11 +280,12 @@ submitTen.onclick = function () {
     incEleven.style.display = 'flex';
     decEleven.style.display = 'flex';
     submitEleven.style.display = 'flex';
+
+    results.hole10 = scoreTen;
 }
 //11
 submitEleven.onclick = function () {
     totalScore += scoreEleven;
-    totalScoreDisplay.innerText = totalScore;
     totalScoreDisplayCopy.innerText = totalScore;
     incEleven.style.display = 'none';
     decEleven.style.display = 'none';
@@ -262,11 +293,12 @@ submitEleven.onclick = function () {
     incTwelve.style.display = 'flex';
     decTwelve.style.display = 'flex';
     submitTwelve.style.display = 'flex';
+
+    results.hole11 = scoreEleven;
 }
 //12
 submitTwelve.onclick = function () {
     totalScore += scoreTwelve;
-    totalScoreDisplay.innerText = totalScore;
     totalScoreDisplayCopy.innerText = totalScore;
     incTwelve.style.display = 'none';
     decTwelve.style.display = 'none';
@@ -274,11 +306,12 @@ submitTwelve.onclick = function () {
     incThirteen.style.display = 'flex';
     decThirteen.style.display = 'flex';
     submitThirteen.style.display = 'flex';
+
+    results.hole12 = scoreTwelve;
 }
 //13
 submitThirteen.onclick = function () {
     totalScore += scoreThirteen;
-    totalScoreDisplay.innerText = totalScore;
     totalScoreDisplayCopy.innerText = totalScore;
     incThirteen.style.display = 'none';
     decThirteen.style.display = 'none';
@@ -286,11 +319,12 @@ submitThirteen.onclick = function () {
     incFourteen.style.display = 'flex';
     decFourteen.style.display = 'flex';
     submitFourteen.style.display = 'flex';
+
+    results.hole13 = scoreThirteen;
 }
 //14
 submitFourteen.onclick = function () {
     totalScore += scoreFourteen;
-    totalScoreDisplay.innerText = totalScore;
     totalScoreDisplayCopy.innerText = totalScore;
     incFourteen.style.display = 'none';
     decFourteen.style.display = 'none';
@@ -298,11 +332,12 @@ submitFourteen.onclick = function () {
     incFifteen.style.display = 'flex';
     decFifteen.style.display = 'flex';
     submitFifteen.style.display = 'flex';
+
+    results.hole14 = scoreFourteen;
 }
 //15
 submitFifteen.onclick = function () {
     totalScore += scoreFifteen;
-    totalScoreDisplay.innerText = totalScore;
     totalScoreDisplayCopy.innerText = totalScore;
     incFifteen.style.display = 'none';
     decFifteen.style.display = 'none';
@@ -310,11 +345,12 @@ submitFifteen.onclick = function () {
     incSixteen.style.display = 'flex';
     decSixteen.style.display = 'flex';
     submitSixteen.style.display = 'flex';
+
+    results.hole15 = scoreFifteen;
 }
 //16
 submitSixteen.onclick = function () {
     totalScore += scoreSixteen;
-    totalScoreDisplay.innerText = totalScore;
     totalScoreDisplayCopy.innerText = totalScore;
     incSixteen.style.display = 'none';
     decSixteen.style.display = 'none';
@@ -322,11 +358,12 @@ submitSixteen.onclick = function () {
     incSeventeen.style.display = 'flex';
     decSeventeen.style.display = 'flex';
     submitSeventeen.style.display = 'flex';
+
+    results.hole16 = scoreSixteen;
 }
 //17
 submitSeventeen.onclick = function () {
     totalScore += scoreSeventeen;
-    totalScoreDisplay.innerText = totalScore;
     totalScoreDisplayCopy.innerText = totalScore;
     incSeventeen.style.display = 'none';
     decSeventeen.style.display = 'none';
@@ -334,16 +371,34 @@ submitSeventeen.onclick = function () {
     incEighteen.style.display = 'flex';
     decEighteen.style.display = 'flex';
     submitEighteen.style.display = 'flex';
+
+    results.hole17 = scoreSeventeen;
 }
 //18
 submitEighteen.onclick = function () {
     totalScore += scoreEighteen;
-    totalScoreDisplay.innerText = totalScore;
     totalScoreDisplayCopy.innerText = totalScore;
-    totalScoreDisplayFinal.innerText = 'Nice job, you got ' + totalScore;
+
+    if (totalScore <= -1 && totalScore > -5) {
+        totalScoreDisplayFinal.innerText = 'Nice job, you scored: ' + totalScore;
+    } else if (totalScore < -5 && totalScore > -10) {
+        totalScoreDisplayFinal.innerText = 'Cool dude, you scored: ' + totalScore;
+    } else if (totalScore < -10 && totalScore > -15) {
+        totalScoreDisplayFinal.innerText = 'Woah, siiiick... you scored: ' + totalScore;
+    } else if (totalScore < -15) {
+        totalScoreDisplayFinal.innerText = 'New Record! you scored: ' + totalScore;
+    } else if (totalScore > 0) {
+        totalScoreDisplayFinal.innerText = '.... you okay? you scored: ' + totalScore;
+    } else if (totalScore > 5) {
+        totalScoreDisplayFinal.innerText = 'get rekt... you scored: ' + totalScore;
+    }
+
     incEighteen.style.display = 'none';
     decEighteen.style.display = 'none';
     submitEighteen.style.display = 'none';
+
+    results.hole18 = scoreEighteen;
+    results.finalResult = totalScore;
 }
 //end submit buttons
 //begin inc and dec buttons

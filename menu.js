@@ -68,6 +68,8 @@ ninetyEight.onclick = function () {
 
     select.innerHTML = 'Select Course:'
     gameSelected.innerHTML = '98'
+
+    results.game = '98';
 }
 
 ninetyNine.onclick = function () {
@@ -84,6 +86,8 @@ ninetyNine.onclick = function () {
 
     select.innerHTML = 'Select Course:'
     gameSelected.innerHTML = '99'
+
+    results.game = '99';
 }
 
 twoK.onclick = function () {
@@ -100,6 +104,8 @@ twoK.onclick = function () {
 
     select.innerHTML = 'Select Course:'
     gameSelected.innerHTML = '2K'
+
+    results.game = '2K';
 }
 
 classic.onclick = function () {
@@ -116,6 +122,8 @@ classic.onclick = function () {
 
     select.innerHTML = 'Select Course:'
     gameSelected.innerHTML = 'Classic'
+
+    results.game = 'Classic';
 }
 //end game select
 // 98 course selection clicks
@@ -133,6 +141,8 @@ arbor.onclick = function () {
 
     select.innerHTML = 'Select Mode:';
     courseSelected.innerHTML = 'Arbor Hill';
+
+    results.course = 'Arbor Hill';
 }
 
 bayou.onclick = function () {
@@ -149,6 +159,8 @@ bayou.onclick = function () {
 
     select.innerHTML = 'Select Mode:'
     courseSelected.innerHTML = 'Bayou Bend';
+
+    results.course = 'Bayou Bend';
 }
 
 palm.onclick = function () {
@@ -165,6 +177,9 @@ palm.onclick = function () {
 
     select.innerHTML = 'Select Mode:'
     courseSelected.innerHTML = 'Palm Grove';
+
+    results.course = 'Palm Grove';
+
 }
 // end 98 course select
 // begin 99 course select
@@ -182,6 +197,8 @@ aspen.onclick = function () {
 
     select.innerHTML = 'Select Mode:';
     courseSelected.innerHTML = 'Aspen Lake';
+
+    results.course = 'Aspen Lake';
 }
 
 coconut.onclick = function () {
@@ -198,6 +215,8 @@ coconut.onclick = function () {
 
     select.innerHTML = 'Select Mode:'
     courseSelected.innerHTML = 'Coconut Cove';
+
+    results.course = 'Coconut Cove';
 }
 
 rancho.onclick = function () {
@@ -214,6 +233,8 @@ rancho.onclick = function () {
 
     select.innerHTML = 'Select Mode:'
     courseSelected.innerHTML = 'Rancho Saguaro';
+
+    results.course = 'Rancho Saguaro';
 }
 //end 99 course select
 // begin 2k course select
@@ -231,6 +252,8 @@ stone.onclick = function () {
 
     select.innerHTML = 'Select Mode:';
     courseSelected.innerHTML = 'Stone Valley';
+
+    results.course = 'Stone Valley';
 }
 
 sea.onclick = function () {
@@ -247,6 +270,8 @@ sea.onclick = function () {
 
     select.innerHTML = 'Select Mode:'
     courseSelected.innerHTML = 'Sea Haven';
+
+    results.course = 'Sea Haven';
 }
 
 coyote.onclick = function () {
@@ -263,6 +288,8 @@ coyote.onclick = function () {
 
     select.innerHTML = 'Select Mode:'
     courseSelected.innerHTML = 'Coyote Run';
+
+    results.course = 'Coyote Run';
 }
 // end 2k course select
 // begin classic course select
@@ -280,6 +307,8 @@ mountain.onclick = function () {
 
     select.innerHTML = 'Select Mode:';
     courseSelected.innerHTML = 'Mountain Springs';
+
+    results.course = 'Mountain Springs';
 }
 
 anchor.onclick = function () {
@@ -296,6 +325,8 @@ anchor.onclick = function () {
 
     select.innerHTML = 'Select Mode:';
     courseSelected.innerHTML = 'Anchor Cove';
+
+    results.course = 'Anchor Cove';
 }
 
 scorpian.onclick = function () {
@@ -312,6 +343,8 @@ scorpian.onclick = function () {
 
     select.innerText = 'Select Mode:';
     courseSelected.innerText = 'Scorpion Bend';
+
+    results.course = 'Scorpian Bend';
 }
 //end course select buttons
 //begin game mode select buttons
@@ -327,6 +360,8 @@ strokes.onclick = function () {
         back4.hidden = true;
         back5.hidden = true;
         back6.hidden = false;
+
+        results.mode = 'Stroke Play';
 }
 //END STROKE PLAY
 
@@ -343,6 +378,8 @@ speed.onclick = function () {
     back4.hidden = true;
     back5.hidden = true;
     back6.hidden = false;
+
+    results.mode = 'Speed Run';
 }     
 //end game mode select buttons
 // back button functionality
@@ -440,4 +477,30 @@ back5.onclick = function () {
 }
 back6.onclick = function () {
     window.location.reload();
+}
+
+results = {
+    name: 'Player 1',
+    game: '',
+    course: '',
+    mode: '',
+    finalResult: 0,
+    hole1: 0,
+    hole2: 0,
+    hole3: 0,
+    hole4: 0,
+    hole5: 0,
+    hole6: 0,
+    hole7: 0,
+    hole8: 0,
+    hole9: 0,
+    hole10: 0,
+    hole11: 0,
+    hole12: 0,
+    hole13: 0,
+    hole14: 0,
+    hole15: 0,
+    hole16: 0,
+    hole17: 0,
+    hole18: 0
 }
