@@ -26,7 +26,8 @@ let courseSelected = document.getElementById('courseSelected');
 let modeSelected = document.getElementById('modeSelected');
 let playersSelected = document.getElementById('playersSelected');
 let back = document.getElementById('back');
-
+//end grabbing elements
+//hide everything
 arbor.hidden = true;
 bayou.hidden = true;
 palm.hidden = true;
@@ -51,7 +52,7 @@ back6.hidden = true;
 
 strokes.hidden = true;
 speed.hidden = true;
-
+//end hiding everything
 //game select buttons
 ninetyEight.onclick = function () {
     ninetyEight.hidden = true;
@@ -72,7 +73,7 @@ ninetyEight.onclick = function () {
     results.game = '98';
 }
 
-ninetyNine.onclick = function () {
+ninetyNine.onclick = function() {
     ninetyEight.hidden = true;
     ninetyNine.hidden = true;
     twoK.hidden = true;
@@ -484,23 +485,4 @@ results = {
     game: '',
     course: '',
     mode: '',
-    finalResult: 0,
-    hole1: 0,
-    hole2: 0,
-    hole3: 0,
-    hole4: 0,
-    hole5: 0,
-    hole6: 0,
-    hole7: 0,
-    hole8: 0,
-    hole9: 0,
-    hole10: 0,
-    hole11: 0,
-    hole12: 0,
-    hole13: 0,
-    hole14: 0,
-    hole15: 0,
-    hole16: 0,
-    hole17: 0,
-    hole18: 0
 }

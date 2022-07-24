@@ -4,14 +4,16 @@ let totalTimeDisplay = document.getElementById('totalTime');
 const time = document.getElementById('time');
 const announce = document.getElementById('announce');
 const speedRunDisplay = document.getElementById('speedRunDisplay');
-let total = [0, 0];
 
-var min = 0;
-var sec = 0;
-var stoptime = true;
-var hole = 0;
+let min = 0;
+let sec = 0;
+let stoptime = true;
+let hole = 0;
+let total = 0;
 theButton.innerText = "Start";
 speedRunDisplay.hidden = true;
+
+
 
 function startTimer() {
   if (stoptime == true) {
@@ -19,22 +21,22 @@ function startTimer() {
         timerCycle();
         theButton.innerText = "Lap";
         hole++;
+        
 
     } else if (stoptime == false & hole <= 19) {
+
       
-      time.innerText += ' / ' + hole + '-' + timer.innerText + ' / ';
-      //trying to add to a total time, not working yet
-      total[0] + min;
-      total[1] + sec;
-      console.log(total);
-      //trying to add to a total time, not working yet
+      postResults();
+
+      time.innerText += hole++ + ' - ' + timer.innerText;
+      const para = document.createElement("p");
+      time.appendChild(para);
+
+
+
 
       resetTimer();  
       
-
-      if (hole <= 18) {
-        hole++;
-      }
 
       if (hole === 19) {
         theButton.innerHTML = "TIME!";
@@ -42,6 +44,7 @@ function startTimer() {
         theButton.style.display = 'none';
         timer.style.display = 'none';
         announce.innerText = "TIME!";
+        downloadCSV.style.display = 'flex';
       }
       
     }
@@ -85,4 +88,44 @@ function resetTimer() {
     timer.innerHTML = '0:00';
     sec = 0;
     min = 0;
+}
+
+function postResults() {
+  if (hole === 1) {
+    results.hole1 = timer.innerText;
+  } else if (hole === 2) {
+    results.hole2 = timer.innerText;
+  } else if (hole === 3) {
+    results.hole3 = timer.innerText;
+  } else if (hole === 4) {
+    results.hole4 = timer.innerText;
+  } else if (hole === 5) {
+    results.hole5 = timer.innerText;
+  } else if (hole === 6) {
+    results.hole6 = timer.innerText;
+  } else if (hole === 7) {
+    results.hole7 = timer.innerText;
+  } else if (hole === 8) {
+    results.hole8 = timer.innerText;
+  } else if (hole === 9) {
+    results.hole9 = timer.innerText;
+  } else if (hole === 10) {
+    results.hole10 = timer.innerText;
+  } else if (hole === 11) {
+    results.hole11 = timer.innerText;
+  } else if (hole === 12) {
+    results.hole12 = timer.innerText;
+  } else if (hole === 13) {
+    results.hole13 = timer.innerText;
+  } else if (hole === 14) {
+    results.hole14 = timer.innerText;
+  } else if (hole === 15) {
+    results.hole15 = timer.innerText;
+  } else if (hole === 16) {
+    results.hole16 = timer.innerText;
+  } else if (hole === 17) {
+    results.hole17 = timer.innerText;
+  } else if (hole === 18) {
+    results.hole18 = timer.innerText;
+  }        
 }

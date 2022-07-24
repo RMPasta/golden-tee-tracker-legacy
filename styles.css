@@ -219,7 +219,7 @@ button:active {
   #action {
     display: none;
     position: relative;
-    margin: 1rem auto;
+    margin: .5rem auto;
     justify-content: center;
     align-items: center;
   }
@@ -238,13 +238,17 @@ button:active {
   }
   #timeContainter {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    height: 50rem;
+    
   }
   #time {
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 45rem;
-    font-size: 1.8rem;
+    font-size: 1.1rem;
   }
   @media only screen and (max-width: 500px) {
     #firstBar {

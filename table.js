@@ -151,11 +151,11 @@ submitOne.onclick = function () {
 
     results.hole1 = scoreOne;
 
- 
+ /* uncomment for testing result func
     incEighteen.style.display = 'flex';
     decEighteen.style.display = 'flex';
     submitEighteen.style.display = 'flex';
-    
+    */
     
 }
 //2
