@@ -114,14 +114,13 @@ let submitSixteen = document.getElementById('submitSixteen');
 let submitSeventeen = document.getElementById('submitSeventeen');
 let submitEighteen = document.getElementById('submitEighteen');
 //total score
+//download csv file of results
+let downloadCSV = document.getElementById('action');
+
 let totalScoreDisplay = document.getElementById('totalScore');
 let totalScoreDisplayCopy = document.getElementById('totalScoreCopy');
 let totalScoreDisplayFinal = document.getElementById('totalScoreFinal');
 let totalScore = 0;
-//second half of table 
-let secondHalf = document.getElementById('secondHalfTable');
-
-
 
 let table = document.getElementById('wrapper');
 
@@ -135,8 +134,10 @@ table.style.display = 'none';
 
 //submit buttons add score to total score and then display it
 //then it hides all buttons essentially locking in the score
+//then it shows the hidden buttons on the next cell
 //1
 submitOne.onclick = function () {
+    
     totalScore += scoreOne;
     totalScoreDisplay.innerText = totalScore;
     totalScoreDisplayCopy.innerText = totalScore;
@@ -148,13 +149,14 @@ submitOne.onclick = function () {
     submitTwo.style.display = 'flex';
 
     results.hole1 = scoreOne;
+
     /*
     for testing the final result functions, uncomment this code
-
     incEighteen.style.display = 'flex';
     decEighteen.style.display = 'flex';
     submitEighteen.style.display = 'flex';
     */
+    
 }
 //2
 submitTwo.onclick = function () {
@@ -399,6 +401,7 @@ submitEighteen.onclick = function () {
 
     results.hole18 = scoreEighteen;
     results.finalResult = totalScore;
+    downloadCSV.style.display = 'flex';
 }
 //end submit buttons
 //begin inc and dec buttons

@@ -216,6 +216,13 @@ button:active {
   .tablebtn {
     display: none;
   }
+  #action {
+    display: none;
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
   #speedRunDisplay {
     display: none;
     justify-content: center;
