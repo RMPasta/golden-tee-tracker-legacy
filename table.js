@@ -124,6 +124,7 @@ let totalScore = 0;
 
 let table = document.getElementById('wrapper');
 
+
 //end grabbing elements
 // hide elements
 table.style.display = 'none';
@@ -150,12 +151,11 @@ submitOne.onclick = function () {
 
     results.hole1 = scoreOne;
 
-    /*
-    for testing the final result functions, uncomment this code
+ 
     incEighteen.style.display = 'flex';
     decEighteen.style.display = 'flex';
     submitEighteen.style.display = 'flex';
-    */
+    
     
 }
 //2
@@ -406,7 +406,8 @@ submitEighteen.onclick = function () {
 //end submit buttons
 //begin inc and dec buttons
 //increments or decrements score and then displays it
-incOne.onclick = function () {
+incOne.keypress = function (e) {
+
     scoreOne++;
     scoreDisplayOne.innerText = scoreOne;
 }

@@ -15,7 +15,7 @@ const download = function (data) {
 
 	// Setting the anchor tag attribute for downloading
 	// and passing the download file name
-	a.setAttribute('download', 'download.csv');
+	a.setAttribute('download', 'StrokesResult.csv');
 
 	// Performing a download with click
 	a.click()
