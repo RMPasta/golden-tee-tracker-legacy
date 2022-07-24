@@ -115,6 +115,7 @@ let submitEighteen = document.getElementById('submitEighteen');
 //total score
 let totalScoreDisplay = document.getElementById('totalScore');
 let totalScoreDisplayCopy = document.getElementById('totalScoreCopy');
+let totalScoreDisplayFinal = document.getElementById('totalScoreFinal');
 let totalScore = 0;
 
 
@@ -339,6 +340,7 @@ submitEighteen.onclick = function () {
     totalScore += scoreEighteen;
     totalScoreDisplay.innerText = totalScore;
     totalScoreDisplayCopy.innerText = totalScore;
+    totalScoreDisplayFinal.innerText = 'Nice job, you got ' + totalScore;
     incEighteen.style.display = 'none';
     decEighteen.style.display = 'none';
     submitEighteen.style.display = 'none';

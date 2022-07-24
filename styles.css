@@ -215,8 +215,28 @@ button:active {
   .tablebtn {
     display: none;
   }
+  #speedRunDisplay {
+    display: none;
+    justify-content: center;
+    text-align: center;
+  }
+  #stopwatch {
+    font-size: 2rem;
+  }
+  #theButton {
+    height: 2rem;
+    width: 4rem;
+    text-align: center;
+  }
+  #timeContainter {
+    display: flex;
+    justify-content: center;
+  }
   #time {
-    font-size: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45rem;
+    font-size: 1.8rem;
   }
   @media only screen and (max-width: 500px) {
     #firstBar {

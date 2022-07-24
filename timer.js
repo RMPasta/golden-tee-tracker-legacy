@@ -1,17 +1,16 @@
 const timer = document.getElementById('stopwatch');
 const theButton = document.getElementById('theButton');
-let totalDisplay = document.getElementById('totaltime');
+let totalTimeDisplay = document.getElementById('totalTime');
 const time = document.getElementById('time');
 const announce = document.getElementById('announce');
 const speedRunDisplay = document.getElementById('speedRunDisplay');
+let total = [0, 0];
 
-var hr = 0;
 var min = 0;
 var sec = 0;
 var stoptime = true;
 var hole = 0;
 theButton.innerText = "Start";
-total = 0;
 speedRunDisplay.hidden = true;
 
 function startTimer() {
@@ -23,8 +22,12 @@ function startTimer() {
 
     } else if (stoptime == false & hole <= 19) {
       
-      time.innerText += hole + ' ' + timer.innerText + '/ /';
-      
+      time.innerText += ' / ' + hole + '-' + timer.innerText + ' / ';
+      //trying to add to a total time, not working yet
+      total[0] + min;
+      total[1] + sec;
+      console.log(total);
+      //trying to add to a total time, not working yet
 
       resetTimer();  
       
@@ -37,6 +40,7 @@ function startTimer() {
         theButton.innerHTML = "TIME!";
         stoptime = true;
         theButton.style.display = 'none';
+        timer.style.display = 'none';
         announce.innerText = "TIME!";
       }
       
@@ -68,9 +72,7 @@ function timerCycle() {
     if (sec < 10 || sec == 0) {
       sec = '0' + sec;
     }
-    if (min < 10 || min == 0) {
-      min = '0' + min;
-    }
+
 
     timer.innerHTML = min + ':' + sec;
 
@@ -80,7 +82,7 @@ function timerCycle() {
 
 function resetTimer() {
 
-    timer.innerHTML = '00:00';
+    timer.innerHTML = '0:00';
     sec = 0;
     min = 0;
 }

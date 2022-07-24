@@ -56,6 +56,7 @@
         <p id="courseSelected"></p>
         <p id="modeSelected"></p>
         <p id="playersSelected"></p>
+        <p id="totalScoreFinal"></p>
 
         <!--end menu section-->
 
@@ -227,18 +228,16 @@
 
           <!--beginning speed run section-->
 
-        <div id="speedRunDisplay">  
-            <p id="time"></p>
+        <div id="speedRunDisplay">
             <p id="totalTime"></p>
-
             <div id="stopwatch">
-                00:00
+                0:00
             </div>
-
-            <ul id="buttons">
-                <li><button id="theButton" onclick="startTimer()"></button></li>
-            </ul>
-            <p id="announce"></p>
+            <button id="theButton" onclick="startTimer()"></button>
+        </div>
+        <p id="announce"></p>
+        <div id="timeContainter">
+            <p id="time"></p>
         </div>
     </body>
 </html>
