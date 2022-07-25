@@ -9,7 +9,8 @@ let min = 0;
 let sec = 0;
 let stoptime = true;
 let hole = 0;
-let total = 0;
+let totalSec = 0;
+let totalMin = 0;
 theButton.innerText = "Start";
 speedRunDisplay.hidden = true;
 
@@ -27,6 +28,8 @@ function startTimer() {
 
       
       postResults();
+     
+      
 
       time.innerText += hole++ + ' - ' + timer.innerText;
       const para = document.createElement("p");
@@ -35,8 +38,12 @@ function startTimer() {
 
 
 
-      resetTimer();  
       
+      resetTimer();
+      
+      if (hole == 18) {
+        results.finalScore = totalTimeDisplay.innerText;
+      }       
 
       if (hole === 19) {
         theButton.innerHTML = "TIME!";
@@ -45,8 +52,9 @@ function startTimer() {
         timer.style.display = 'none';
         announce.innerText = "TIME!";
         downloadCSV.style.display = 'flex';
-      }
       
+      }
+    
     }
 }
 
@@ -84,12 +92,27 @@ function timerCycle() {
 }
 
 function resetTimer() {
-
+  //post total time and then resut timer
+    totalSec = parseInt(totalSec) + parseInt(sec);
+    totalMin = parseInt(totalMin) + parseInt(min);
+    
+    if (totalSec < 10) {
+      totalTimeDisplay.innerText = totalMin + ':0' + totalSec;
+      results.finalScore = totalTimeDisplay.innerText;
+    } else if (totalSec >= 60) {
+      totalMin = parseInt(totalMin) + 1;
+      totalSec = parseInt(totalSec) - 60;
+      totalTimeDisplay.innerText = totalMin + ':0' + totalSec;
+      results.finalScore = totalTimeDisplay.innerText;
+    } else {
+      totalTimeDisplay.innerText = totalMin + ':' + totalSec;
+      resultsfinalScore = totalTimeDisplay.innerText;
+    }
     timer.innerHTML = '0:00';
     sec = 0;
     min = 0;
 }
-
+//post time rresult per hole to results object in menu.js
 function postResults() {
   if (hole === 1) {
     results.hole1 = timer.innerText;
@@ -127,5 +150,5 @@ function postResults() {
     results.hole17 = timer.innerText;
   } else if (hole === 18) {
     results.hole18 = timer.innerText;
-  }        
+  }
 }
