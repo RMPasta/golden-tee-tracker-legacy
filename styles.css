@@ -2,7 +2,7 @@ body {
     display: flex-box;
     background-color: #f1fcf1;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    overflow: hidden;
+    overflow: visible;
 }
 
 h1 {
@@ -230,10 +230,8 @@ button:active {
     text-align: center;
   }
   #stopwatch {
+    color: #478547;
     font-size: 7rem;
-  }
-  #stopwatchTotal {
-    font-size: 4rem;
   }
   #theButton {
     height: 12rem;
@@ -244,17 +242,40 @@ button:active {
   }
   #timeContainter {
     display: flex;
-    justify-content: center;
+    float: left;
+    
     height: 50rem;
   }
   #time {
     display: flex;
+    float: left;
     width: 45rem;
     height: auto;
     font-size: 1rem;
   }
+  #stopwatchTotal {
+    justify-content: center;
+    text-align: center;
+    display: none;
+    font-size: 3em;
+    color: #478547;
+  }
   #totalTime {
     text-align: center;
+  }
+  #scrollLock {
+    text-align: center;
+    height: 3rem;
+    width: 5rem;
+  }
+  #scrollUnlock {
+    text-align: center;
+    height: 3rem;
+    width: 5rem;
+  }
+  #scrollToggleBox {
+    display: flex;
+    justify-content: center;
   }
 
   @media only screen and (max-width: 500px) {
