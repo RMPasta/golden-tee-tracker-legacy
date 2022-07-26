@@ -7,7 +7,7 @@
         <script src="table.js" defer></script>
         <script src="timer.js" defer></script>
         <script src="csv.js" defer></script>
-        <script src="keytest.js" defer></script>
+        <script src="totaltime.js" defer></script>
     </head>
 
     <body>
@@ -19,6 +19,12 @@
         <button class="button" id="back4">Back</button>
         <button class="button" id="back5">Back</button>
         <button class="button" id="back6">Home</button>
+
+        <div id='scrollToggleBox'>
+            <button class="button" id="scrollLock">Scroll Lock</button>
+            <button class="button" id="scrollUnlock">Scroll Unlock</button>
+        </div>
+        
 
         <!-- end back buttons-->
 
@@ -235,11 +241,11 @@
 
           <!--beginning speed run section-->
 
-        <div id="speedRunDisplay">
-            <!-- <div id="stopwatchTotal">
-                0:00
-            </div> -->
+          <div id="stopwatchTotal">
+            0:00
+        </div>
 
+        <div id="speedRunDisplay">
             <div id="stopwatch">
                 0:00
             </div>

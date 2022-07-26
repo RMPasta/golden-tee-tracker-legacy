@@ -1,9 +1,8 @@
 const timer = document.getElementById("stopwatch");
-const timerTotal = document.getElementById("stopwatchTotal");
 const theButton = document.getElementById("theButton");
-let totalTimeDisplay = document.getElementById("totalTime");
 const time = document.getElementById("time");
 const announce = document.getElementById("announce");
+const totalTimeDisplay = document.getElementById("totalTime");
 const speedRunDisplay = document.getElementById("speedRunDisplay");
 
 let min = 0;
@@ -17,12 +16,18 @@ speedRunDisplay.hidden = true;
 theButton.hidden = true;
 
 function startTimer() {
+
   if (stoptime == true) {
+    startTimerTotal()
+  }
+
+  if (stoptime == true) {
+    
     stoptime = false;
     timerCycle();
     theButton.innerText = "Lap";
     hole++;
-  } else if ((stoptime == false) & (hole <= 19 & sec > 4)) {
+  } else if ((stoptime == false) & (hole <= 19)) {
     postResults();
 
     time.innerText += hole++ + " - " + timer.innerText;
@@ -31,9 +36,7 @@ function startTimer() {
 
     resetTimer();
 
-    if (hole == 18) {
-      results.finalScore = totalTimeDisplay.innerText;
-    }
+
 
     if (hole === 19) {
       theButton.innerHTML = "TIME!";
@@ -53,38 +56,7 @@ function stopTimer() {
 }
 
 function timerCycle() {
-  /*
-  function timerCycleTwo() {
 
-
-  
-
-
-    if (stoptime == false) {
-    secTwo = parseInt(sec);
-    min = parseInt(min);
-  
-    sec = sec + 1;
-  
-    if (sec == 60) {
-      min = min + 1;
-      sec = 0;
-    }
-  
-  
-    if (sec < 10 || sec == 0) {
-      sec = '0' + sec;
-    }
-    timerTotal.innerHTML = min + ':' + sec;
-  
-    
-  
-    setTimeout("timerCycle()", 1000);
-  } 
-  }
-  
-  timerCycleTwo();  
-  */
 
   if (stoptime == false) {
     sec = parseInt(sec);
@@ -109,25 +81,7 @@ function timerCycle() {
 
 function resetTimer() {
   //post total time and then resut timer
-  totalSec = parseInt(totalSec) + parseInt(sec);
-  totalMin = parseInt(totalMin) + parseInt(min);
 
-  if (totalSec < 10) {
-    totalTimeDisplay.innerText = totalMin + ":0" + totalSec;
-    results.finalScore = totalTimeDisplay.innerText;
-  } else if (totalSec >= 60) {
-    totalMin = parseInt(totalMin) + 1;
-    totalSec = parseInt(totalSec) - 60;
-    if (totalSec < 10) {
-      totalTimeDisplay.innerText = totalMin + ":0" + totalSec;
-    } else {
-    totalTimeDisplay.innerText = totalMin + ":" + totalSec;
-    }
-    results.finalScore = totalTimeDisplay.innerText;
-  } else {
-    totalTimeDisplay.innerText = totalMin + ":" + totalSec;
-    resultsfinalScore = totalTimeDisplay.innerText;
-  }
   timer.innerHTML = "0:00";
   sec = 0;
   min = 0;

@@ -26,6 +26,9 @@ let courseSelected = document.getElementById('courseSelected');
 let modeSelected = document.getElementById('modeSelected');
 let playersSelected = document.getElementById('playersSelected');
 let back = document.getElementById('back');
+
+let scrollLock = document.getElementById('scrollLock');
+let scrollUnlock = document.getElementById('scrollUnlock');
 //end grabbing elements
 //hide everything
 arbor.hidden = true;
@@ -383,6 +386,7 @@ speed.onclick = function () {
     results.mode = 'Speed Run';
 
     theButton.hidden = false;
+    timerTotal.style.display = 'flex';
 }     
 //end game mode select buttons
 // back button functionality
@@ -481,6 +485,20 @@ back5.onclick = function () {
 back6.onclick = function () {
     window.location.reload();
 }
+
+scrollLock.onclick = function () {
+    if (document.body.style.overflow = 'visible') {
+        document.body.style.overflow = 'hidden';
+    }
+}
+scrollUnlock.onclick = function () {
+    if (document.body.style.overflow = 'hidden') {
+        document.body.style.overflow = 'visible';
+    }
+}  
+
+
+
 
 results = {
     name: 'Player 1',
