@@ -2,6 +2,7 @@ body {
     display: flex-box;
     background-color: #f1fcf1;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: hidden;
 }
 
 h1 {
@@ -19,8 +20,8 @@ p {
 }
 
 .button {
-    height: 3rem;
-    width: 5rem;
+    height: 6rem;
+    width: 8rem;
     border: 1px solid #478547;
     border-radius: 1em;
     background-color: #85E085;
@@ -36,8 +37,8 @@ p {
 }
 
 .button:active {
-    height: 2.8rem;
-    width: 4.9rem;
+    height: 6rem;
+    width: 8rem;
 
 }
 
@@ -229,12 +230,17 @@ button:active {
     text-align: center;
   }
   #stopwatch {
-    font-size: 2rem;
+    font-size: 7rem;
+  }
+  #stopwatchTotal {
+    font-size: 4rem;
   }
   #theButton {
-    height: 2rem;
-    width: 4rem;
+    height: 12rem;
+    width: 14rem;
     text-align: center;
+    border-radius: 30%;
+    font-size: 3rem;
   }
   #timeContainter {
     display: flex;
@@ -242,10 +248,10 @@ button:active {
     height: 50rem;
   }
   #time {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: flex;
     width: 45rem;
-    font-size: 1.1rem;
+    height: auto;
+    font-size: 1rem;
   }
   #totalTime {
     text-align: center;

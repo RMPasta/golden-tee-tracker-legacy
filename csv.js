@@ -15,7 +15,7 @@ const download = function (data) {
 
 	// Setting the anchor tag attribute for downloading
 	// and passing the download file name
-	a.setAttribute('download', 'Results.csv');
+	a.setAttribute('download', 'results.csv');
 
 	// Performing a download with click
 	a.click()
@@ -35,6 +35,8 @@ const csvmaker = function (data) {
 	// must be separated by comma and
 	// pushing it into array
 	csvRows.push(headers.join(','));
+
+	//
 
 	// Pushing Object values into array
 	// with comma separation

@@ -381,6 +381,8 @@ speed.onclick = function () {
     back6.hidden = false;
 
     results.mode = 'Speed Run';
+
+    theButton.hidden = false;
 }     
 //end game mode select buttons
 // back button functionality
