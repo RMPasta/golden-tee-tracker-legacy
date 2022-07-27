@@ -22,7 +22,7 @@ function stopTimerTotal() {
 function timerCycleTotal() {
 
     
-    if (hole == 18) {
+    if (hole == 19) {
         stopTimerTotal();
         
     }
