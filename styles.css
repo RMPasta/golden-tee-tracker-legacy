@@ -2,7 +2,7 @@ body {
     display: flex-box;
     background-color: #f1fcf1;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    overflow: visible;
+    overflow: hidden;
 }
 
 h1 {
@@ -275,6 +275,7 @@ button:active {
     text-align: center;
     height: 2.5rem;
     width: 4rem;
+    z-index: 2;
 
   }
   #scrollToggleBox {
