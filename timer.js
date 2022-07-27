@@ -27,7 +27,7 @@ function startTimer() {
     timerCycle();
     theButton.innerText = "Lap";
     hole++;
-  } else if ((stoptime == false) & (hole <= 19)) {
+  } else if ((stoptime == false) & (hole <= 19 & sec > 4)) {
     postResults();
     
     time.innerText += hole++ + " - " + timer.innerText + ' - ';
