@@ -489,11 +489,16 @@ back6.onclick = function () {
 scrollLock.onclick = function () {
     if (document.body.style.overflow = 'visible') {
         document.body.style.overflow = 'hidden';
+        scrollLock.style.zIndex = '1';
+        scrollUnlock.style.zIndex = '2';
+
     }
 }
 scrollUnlock.onclick = function () {
     if (document.body.style.overflow = 'hidden') {
         document.body.style.overflow = 'visible';
+        scrollLock.style.zIndex = '2';
+        scrollUnlock.style.zIndex = '1';
     }
 }  
 

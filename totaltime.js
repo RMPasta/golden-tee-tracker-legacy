@@ -24,7 +24,7 @@ function timerCycleTotal() {
     
     if (hole == 18) {
         stopTimerTotal();
-        results.finalScore = timerTotal.innerText;
+        
     }
 
   if (stoptimeTotal == false) {
@@ -47,9 +47,6 @@ function timerCycleTotal() {
     setTimeout("timerCycleTotal()", 1000);
   }
   
-  if (hole == 18) {
-    stopTimerTotal();
-    results.finalScore = timerTotal.innerText;
-}
+ 
 
 }

@@ -264,14 +264,18 @@ button:active {
     text-align: center;
   }
   #scrollLock {
+    position: fixed;
     text-align: center;
-    height: 3rem;
-    width: 5rem;
+    height: 2.5rem;
+    width: 4rem;
+    z-index: 1;
   }
   #scrollUnlock {
+    position: fixed;
     text-align: center;
-    height: 3rem;
-    width: 5rem;
+    height: 2.5rem;
+    width: 4rem;
+
   }
   #scrollToggleBox {
     display: flex;

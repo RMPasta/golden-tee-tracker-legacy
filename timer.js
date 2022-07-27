@@ -27,10 +27,10 @@ function startTimer() {
     timerCycle();
     theButton.innerText = "Lap";
     hole++;
-  } else if ((stoptime == false) & (hole <= 19 & sec > 4)) {
+  } else if ((stoptime == false) & (hole <= 19)) {
     postResults();
-
-    time.innerText += hole++ + " - " + timer.innerText;
+    
+    time.innerText += hole++ + " - " + timer.innerText + ' - ';
     const para = document.createElement("p");
     time.appendChild(para);
 
@@ -39,6 +39,7 @@ function startTimer() {
 
 
     if (hole === 19) {
+      results.finalScore = timerTotal.innerText;
       theButton.innerHTML = "TIME!";
       stoptime = true;
       theButton.style.display = "none";
