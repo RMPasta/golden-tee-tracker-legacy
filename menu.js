@@ -307,7 +307,11 @@ mountain.onclick = function () {
     speed.hidden = false;
 
     back.hidden = true;
+    back2.hidden = true;
+    back3.hidden = true;
+    back4.hidden = true;
     back5.hidden = false;
+    back6.hidden = true;
 
     select.innerHTML = 'Select Mode:';
     courseSelected.innerHTML = 'Mountain Springs';
@@ -325,7 +329,11 @@ anchor.onclick = function () {
     speed.hidden = false;
 
     back.hidden = true;
+    back2.hidden = true;
+    back3.hidden = true;
+    back4.hidden = true;
     back5.hidden = false;
+    back6.hidden = true;
 
     select.innerHTML = 'Select Mode:';
     courseSelected.innerHTML = 'Anchor Cove';
@@ -343,7 +351,11 @@ scorpian.onclick = function () {
     speed.hidden = false;
 
     back.hidden = true;
+    back2.hidden = true;
+    back3.hidden = true;
+    back4.hidden = true;
     back5.hidden = false;
+    back6.hidden = true;
 
     select.innerText = 'Select Mode:';
     courseSelected.innerText = 'Scorpion Bend';
