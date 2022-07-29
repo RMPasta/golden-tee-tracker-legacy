@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>GT</title>
+        <title>Golden Tee Tracker</title>
         <link rel="stylesheet" href="styles.css">
         <script src="menu.js" defer></script>
         <script src="table.js" defer></script>
@@ -21,16 +21,23 @@
         <button class="button" id="back5">Back</button>
         <button class="button" id="back6">Home</button>
 
+        <div id="leaderBox">
+            <button><a href="leaderboard.html" id="leader">Leaderboard</a></button>
+        </div>
+
         <div id='scrollToggleBox'>
             <button class="button" id="scrollLock">Scroll Lock</button>
             <button class="button" id="scrollUnlock">Scroll Unlock</button>
         </div>
         
+        
+        <br>
 
         <!-- end back buttons-->
 
         <h1>Golden Tee Tracker</h1>
         <p id="select">Select Game:</p>
+        <a href="leaderboard.html"></a>
 
         <!--game select buttons-->
 
@@ -41,7 +48,6 @@
             <button class="button" id="classic">Classic</button>
 
             <!--course select buttons-->
-
             <button class="button" id="arbor">Arbor Hill</button>
             <button class="button" id="bayou">Bayou Bend</button>
             <button class="button" id="palm">Palm Grove</button>
@@ -53,12 +59,15 @@
             <button class="button" id="coyote">Coyote Run</button>
             <button class="button" id="mountain">Mountain Springs</button>
             <button class="button" id="anchor">Anchor Cove</button>
-            <button class="button" id="scorpian">Scorpian Bend</button>
+            <button class="button" id="scorpion">Scorpion Bend</button>
 
             <!--game mode select buttons-->
 
             <button class="button" id="strokes">Stroke Play</button>
             <button class="button" id="speed">Speed Run</button>
+        </section>
+        <section>
+            
         </section>
         <p id="gameSelected"></p>
         <p id="courseSelected"></p>
@@ -247,21 +256,15 @@
         </div>
 
         <div id="speedRunDisplay">
+            <button id="theButton" onclick="startTimer()"></button>
             <div id="stopwatch">
                 0:00
             </div>
-            <button id="theButton" onclick="startTimer()"></button>
         </div>
 
       
         <p id="time"></p>
         <p id="totalTime"></p>
         <p id="announce"></p>
-        <div id="timeContainter">
-                    <!--speed run time display -->
-        
-        
-            
-        </div>
     </body>
 </html>

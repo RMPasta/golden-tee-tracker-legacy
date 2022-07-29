@@ -12,8 +12,6 @@ let hole = 0;
 let totalSec = 0;
 let totalMin = 0;
 theButton.innerText = "Start";
-speedRunDisplay.hidden = true;
-theButton.hidden = true;
 
 function startTimer() {
 
