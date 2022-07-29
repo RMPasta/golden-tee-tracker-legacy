@@ -14,7 +14,7 @@ let sea = document.getElementById('sea');
 let coyote = document.getElementById('coyote');
 let mountain = document.getElementById('mountain');
 let anchor = document.getElementById('anchor');
-let scorpian = document.getElementById('scorpian');
+let scorpion = document.getElementById('scorpion');
 
 
 let strokes = document.getElementById('strokes');
@@ -42,7 +42,7 @@ sea.hidden = true;
 coyote.hidden = true;
 mountain.hidden = true;
 anchor.hidden = true;
-scorpian.hidden = true;
+scorpion.hidden = true;
 
 
 
@@ -120,7 +120,7 @@ classic.onclick = function () {
 
     mountain.hidden = false;
     anchor.hidden = false;
-    scorpian.hidden = false;
+    scorpion.hidden = false;
 
     back.hidden = false;
 
@@ -301,7 +301,7 @@ mountain.onclick = function () {
 
     mountain.hidden = true;
     anchor.hidden = true;
-    scorpian.hidden = true;
+    scorpion.hidden = true;
 
     strokes.hidden = false;
     speed.hidden = false;
@@ -319,7 +319,7 @@ anchor.onclick = function () {
 
     mountain.hidden = true;
     anchor.hidden = true;
-    scorpian.hidden = true;
+    scorpion.hidden = true;
 
     strokes.hidden = false;
     speed.hidden = false;
@@ -333,11 +333,11 @@ anchor.onclick = function () {
     results.course = 'Anchor Cove';
 }
 
-scorpian.onclick = function () {
+scorpion.onclick = function () {
 
     mountain.hidden = true;
     anchor.hidden = true;
-    scorpian.hidden = true;
+    scorpion.hidden = true;
 
     strokes.hidden = false;
     speed.hidden = false;
@@ -348,7 +348,7 @@ scorpian.onclick = function () {
     select.innerText = 'Select Mode:';
     courseSelected.innerText = 'Scorpion Bend';
 
-    results.course = 'Scorpian Bend';
+    results.course = 'Scorpion Bend';
 }
 //end course select buttons
 //begin game mode select buttons
@@ -407,7 +407,7 @@ back.onclick = function () {
     coyote.hidden = true;
     mountain.hidden = true;
     anchor.hidden = true;
-    scorpian.hidden = true;
+    scorpion.hidden = true;
 
     strokes.hidden = true;
     speed.hidden = true;
@@ -471,7 +471,7 @@ back5.onclick = function () {
     
     mountain.hidden = false;
     anchor.hidden = false;
-    scorpian.hidden = false;
+    scorpion.hidden = false;
 
     strokes.hidden = true;
     speed.hidden = true;

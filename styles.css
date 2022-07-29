@@ -10,6 +10,7 @@ h1 {
     font-size: 3em;
     color: #478547;
     justify-content: center;
+    margin-top: 3rem;
 }
 
 p {
@@ -17,6 +18,10 @@ p {
     font-size: 2em;
     color: #478547;
     justify-content: center;
+}
+
+a {
+  color: #478547;
 }
 
 .button {
@@ -50,7 +55,7 @@ button {
     background-color: #85E085;
     color: #478547;
     font-size: 1em;
-    margin: .05em .05em;
+    
 }
 
 button:hover {
@@ -69,12 +74,70 @@ button:active {
     display: flex;
     justify-content: space-evenly;
 }
-
-#back, #back2, #back3, #back4, #back, #back6 {
+#leaderBox {
+  display: flex;
+  justify-content: center;
+}
+#leader {
+    text-decoration: none;
+    list-style: none;
+}
+#back, #back2, #back3, #back4, #back5, #back6 {
     position: fixed;
     top: 0;
     left: 0;
 }
+#scrollLock {
+  position: fixed;
+  text-align: center;
+  height: 2.5rem;
+  width: 4rem;
+  z-index: 1;
+}
+#scrollUnlock {
+  position: fixed;
+  text-align: center;
+  height: 2.5rem;
+  width: 4rem;
+  z-index: 2;
+
+}
+#scrollToggleBox {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* end of menu buttons */
+
+
+
+
+
+
+
+
+
+
+/* thus begins the creation of the strokes table using grid display... */
+
+
+
+
+
+
+
+
+
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(10, minmax(0, 1fr));
@@ -217,71 +280,186 @@ button:active {
   .tablebtn {
     display: none;
   }
-  #action {
-    display: none;
-    position: relative;
-    margin: .5rem auto;
-    justify-content: center;
-    align-items: center;
-  }
+
+
+
+
+
+
+  /* thus ends the strokes table */
+
+
+
+
+
+
+
+
+  /* begin speed run section */
+
+
+
+
+
+
   #speedRunDisplay {
     display: none;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
   }
   #stopwatch {
     color: #478547;
-    font-size: 7rem;
+    font-size: 4rem;
   }
   #theButton {
     height: 12rem;
     width: 14rem;
-    text-align: center;
     border-radius: 30%;
     font-size: 3rem;
+    margin: 0 auto;
   }
   #timeContainter {
     display: flex;
-    float: left;
-    
     height: 50rem;
   }
   #time {
     display: flex;
     float: left;
     width: 45rem;
-    height: auto;
-    font-size: 1rem;
+    font-size: 2rem;
   }
   #stopwatchTotal {
     justify-content: center;
     text-align: center;
     display: none;
-    font-size: 3em;
+    font-size: 6rem;
     color: #478547;
   }
   #totalTime {
     text-align: center;
   }
-  #scrollLock {
-    position: fixed;
-    text-align: center;
-    height: 2.5rem;
-    width: 4rem;
-    z-index: 1;
-  }
-  #scrollUnlock {
-    position: fixed;
-    text-align: center;
-    height: 2.5rem;
-    width: 4rem;
-    z-index: 2;
 
+
+
+
+
+
+
+/* end speed run section */
+
+
+
+
+
+
+/* begin skins section */
+
+
+
+
+
+
+
+
+
+/* download results button */
+
+#action {
+  display: none;
+  position: relative;
+  margin: .5rem auto;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/* high score section */
+
+
+
+
+
+
+.highscoreWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.highscoreOne {
+  background-color: #bbeebb;
+  grid-column: 2;
+  grid-row: 2 / 3;
+}
+.highscoreTwo {
+  background-color: #bbeebb;
+  grid-column: 3;
+  grid-row: 2 / 3;
+}
+.highscoreThree {
+  background-color: #bbeebb;
+  grid-column: 4;
+  grid-row: 2 / 3;
+}
+.highscoreFour {
+  background-color: #bbeebb;
+  grid-column: 5;
+  grid-row: 2 / 3;
+}
+.highscoreFive {
+  background-color: #bbeebb;
+  grid-column: 6;
+  grid-row: 2 / 3;
+}
+.highscoreSix {
+  background-color: #bbeebb;
+  grid-column: 7;
+  grid-row: 2 / 3;
+}
+.highscoreSeven {
+  background-color: #bbeebb;
+  grid-column: 8;
+  grid-row: 2 / 3;
+}
+.highscoreEight {
+  background-color: #bbeebb;
+  grid-column: 9;
+  grid-row: 2 / 3;
+}
+.highscoreNine {
+  background-color: #bbeebb;
+  grid-column: 10;
+  grid-row: 2 / 3;
+}
+  .highscoreTen {
+  background-color: #bbeebb;
+  grid-column: 2;
+  grid-row: 4 / 5;
   }
-  #scrollToggleBox {
-    display: flex;
-    justify-content: center;
+  .highscoreEleven {
+  background-color: #bbeebb;
+  grid-column: 3;
+  grid-row: 4 / 5;
   }
+  .highscoreTwelve {
+  background-color: #bbeebb;
+  grid-column: 4;
+  grid-row: 4 / 5;
+  }
+
+
+
+
+/* finish with media queries*/
+
+
+
+
+
+
 
   @media only screen and (max-width: 500px) {
     #firstBar {
