@@ -330,6 +330,7 @@ mountain.onclick = function () {
     back.style.display = 'none';
     back5.style.display = 'flex';
 
+
     select.innerHTML = 'Select Mode:';
     courseSelected.innerHTML = 'Mountain Springs';
 
@@ -341,8 +342,10 @@ anchor.onclick = function () {
     courses4.style.display = 'none';
     gameModes.style.display = 'flex';
 
+
     back.style.display = 'none';
     back5.style.display = 'flex';
+
 
     select.innerHTML = 'Select Mode:';
     courseSelected.innerHTML = 'Anchor Cove';
@@ -355,8 +358,10 @@ scorpion.onclick = function () {
     courses4.style.display = 'none';
     gameModes.style.display = 'flex';
 
+
     back.style.display = 'none';
     back5.style.display = 'flex';
+
 
     select.innerText = 'Select Mode:';
     courseSelected.innerText = 'Scorpion Bend';
