@@ -14,6 +14,10 @@ let totalSec = 0;
 let totalMin = 0;
 theButton.innerText = "Start";
 
+function removeCooldown() {
+  cooldown.innerText = '';
+}
+
 function startTimer() {
 
   if (stoptime == true) {
@@ -21,21 +25,23 @@ function startTimer() {
   }
 
   if (stoptime == true) {
-    
     stoptime = false;
     timerCycle();
     theButton.innerText = "Lap";
     hole++;
   } else if (sec < 5) {
+    setTimeout('removeCooldown()', 5000 - sec * 1000)
     cooldown.innerText = 'cooldown';
   } else if ((stoptime == false) & (hole <= 19 & sec > 4)) {
     cooldown.innerText = '';
 
+
+
     postResults();
 
-    
-    
     time.innerText += hole++ + " - " + timer.innerText + ' - ';
+    
+    
     const para = document.createElement("p");
     time.appendChild(para);
 
@@ -45,7 +51,7 @@ function startTimer() {
 
     if (hole === 19) {
       results.finalScore = timerTotal.innerText;
-      theButton.innerHTML = "TIME!";
+      theButton.style.display = "none";
       stoptime = true;
       timer.style.display = "none";
       announce.innerText = "TIME!";
@@ -78,8 +84,8 @@ function timerCycle() {
       sec = "0" + sec;
     }
 
-    timer.innerHTML = min + ":" + sec;
-
+    timer.innerText = min + ":" + sec;
+ 
     setTimeout("timerCycle()", 1000);
   }
 }

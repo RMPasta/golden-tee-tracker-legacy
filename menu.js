@@ -62,15 +62,15 @@ let scrollUnlock = document.getElementById('scrollUnlock');
 //name submission 
 
 nameSubmit.onclick = function () {
-    if (name.value.length < 2) {
-        nameError.innerText = 'Must enter 2+ digit name'
+    if (name.value.length !== 3) {
+        nameError.innerText = 'Must enter 3 digit name (letters and numbers)'
     }
 
-    if (name.value.length > 1) {
+    if (name.value.length === 3) {
         
     games.style.display = 'flex';
 
-    results.name = name.value;
+    results.name = name.value.toUpperCase();
 
     welcome.style.display = 'none';
     welcomeText.style.display = 'none';
@@ -87,8 +87,9 @@ nameSubmit.onclick = function () {
 }
 
 function randGreeting() {
+    
     let starters = ['Alright, ', 'Let\'s go, ', 'You got this, ', 'No way dude, it\'s ', 'My mans, ']
-    let greetings = [name.value + '. Fuck \'em up!', name.value + '. Time to shred!', name.value + '. Kick some ass!', name.value +  '. Gotta go fast!', name.value +  '. Clap \'em bro!']
+    let greetings = [name.value.toUpperCase() + '. Fuck \'em up!', name.value.toUpperCase() + '. Time to shred!', name.value.toUpperCase() + '. Kick some ass!', name.value.toUpperCase() +  '. Gotta go fast!', name.value.toUpperCase() +  '. Clap \'em bro!']
     let randIndex = Math.floor(Math.random() * 5)
     let randIndex2 = Math.floor(Math.random() * 5)
 
@@ -413,6 +414,12 @@ speed.onclick = function () {
 
     theButton.hidden = false;
     timerTotal.style.display = 'flex';
+
+    gameSelected.style.display = 'none';
+    courseSelected.style.display = 'none';
+    modeSelected.style.display = 'none';
+
+    nameDis.innerText = 'Good luck ' + name.value.toUpperCase() + '!';
 }     
 //end game mode select buttons
 // back button functionality

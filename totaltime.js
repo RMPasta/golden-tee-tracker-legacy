@@ -22,8 +22,9 @@ function stopTimerTotal() {
 function timerCycleTotal() {
 
     
-    if (hole == 19) {
+    if (hole == 19 & min > 1) {
         stopTimerTotal();
+        nameDis.innerText = 'Damn, ' + name.value.toUpperCase(); + '... Better luck next time.'
         
     }
 

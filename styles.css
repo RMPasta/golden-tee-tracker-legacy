@@ -10,7 +10,7 @@ body {
 }
 
 div {
-  text-shadow: 1px 1px 2px green, -.5px -.5px 1px green;
+  text-shadow: 1px 1px 2px green;
 }
 
 h1 {
@@ -19,7 +19,7 @@ h1 {
     color: #478547;
     justify-content: center;
     margin-top: 1rem;
-    text-shadow: 2px 2px 3px green, -.5px -.5px 1.3px green;
+    text-shadow: 1px 1px 3px green, -.5px -.5px 1.3px green;
 }
 
 p {
@@ -117,7 +117,7 @@ a:hover {
     color: #478547;
     font-size: 1em;
     margin: .05em .05em;
-    box-shadow: 3px 3px 5px green, -.5px -.5px 1px green;
+    box-shadow: 2px 2px 5px green, -.5px -.5px 1px green;
 }
 
 .button:hover {
