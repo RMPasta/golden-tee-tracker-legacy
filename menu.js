@@ -54,23 +54,6 @@ let scrollUnlock = document.getElementById('scrollUnlock');
 //end grabbing elements
 
 
-//hide everything
-
-
-
-back.hidden = true;
-back2.hidden = true;
-back3.hidden = true;
-back4.hidden = true;
-back5.hidden = true;
-home.style.display = 'none';
-
-
-
-
-
-//end hiding everything
-
 
 
 
@@ -80,11 +63,11 @@ home.style.display = 'none';
 
 nameSubmit.onclick = function () {
     if (name.value.length < 2) {
-        nameError.innerText = 'Enter 2+ digit name'
+        nameError.innerText = 'Must enter 2+ digit name'
     }
 
     if (name.value.length > 1) {
-        nameError.innerText = ''
+        
     games.style.display = 'flex';
 
     results.name = name.value;
@@ -129,7 +112,7 @@ display the game selected and push the game to the results object */
 ninetyEight.onclick = function () {
     games.style.display = 'none';
     courses1.style.display = 'flex';
-    back.hidden = false;
+    back.style.display = 'flex';
     home.style.display = 'none';
 
     select.innerHTML = 'Select Course:'
@@ -141,7 +124,7 @@ ninetyEight.onclick = function () {
 ninetyNine.onclick = function() {
     games.style.display = 'none';
     courses2.style.display = 'flex';
-    back.hidden = false;
+    back.style.display = 'flex';
     home.style.display = 'none';
 
     select.innerHTML = 'Select Course:'
@@ -152,7 +135,7 @@ ninetyNine.onclick = function() {
 twoK.onclick = function () {
     games.style.display = 'none';
     courses3.style.display = 'flex';
-    back.hidden = false;
+    back.style.display = 'flex';
     home.style.display = 'none';
 
     select.innerHTML = 'Select Course:'
@@ -163,7 +146,7 @@ twoK.onclick = function () {
 classic.onclick = function () {
     games.style.display = 'none';
     courses1.style.display = 'flex';
-    back.hidden = false;
+    back.style.display = 'flex';
     home.style.display = 'none';
 
     select.innerHTML = 'Select Course:'
@@ -189,8 +172,8 @@ arbor.onclick = function () {
 
     gameModes.style.display = 'flex';
 
-    back.hidden = true;
-    back2.hidden = false;
+    back.style.display = 'none';
+    back2.style.display = 'flex';
 
     select.innerHTML = 'Select Mode:';
     courseSelected.innerHTML = 'Arbor Hill';
@@ -204,8 +187,8 @@ bayou.onclick = function () {
 
     gameModes.style.display = 'flex';
 
-    back.hidden = true;
-    back2.hidden = false;
+    back.style.display = 'none';
+    back2.style.display = 'flex';
 
     select.innerHTML = 'Select Mode:'
     courseSelected.innerHTML = 'Bayou Bend';
@@ -219,8 +202,8 @@ palm.onclick = function () {
 
     gameModes.style.display = 'flex';
 
-    back.hidden = true;
-    back2.hidden = false;
+    back.style.display = 'none';
+    back2.style.display = 'flex';
 
     select.innerHTML = 'Select Mode:'
     courseSelected.innerHTML = 'Palm Grove';
@@ -243,8 +226,8 @@ aspen.onclick = function () {
     courses2.style.display = 'none';
     gameModes.style.display = 'flex';
 
-    back.hidden = true;
-    back3.hidden = false;
+    back.style.display = 'none';
+    back3.style.display = 'flex';
 
     select.innerHTML = 'Select Mode:';
     courseSelected.innerHTML = 'Aspen Lake';
@@ -257,8 +240,8 @@ coconut.onclick = function () {
     courses2.style.display = 'none';
     gameModes.style.display = 'flex';
 
-    back.hidden = true;
-    back3.hidden = false;
+    back.style.display = 'none';
+    back3.style.display = 'flex';
 
     select.innerHTML = 'Select Mode:'
     courseSelected.innerHTML = 'Coconut Cove';
@@ -271,8 +254,8 @@ rancho.onclick = function () {
     courses2.style.display = 'none';
     gameModes.style.display = 'flex';
 
-    back.hidden = true;
-    back3.hidden = false;
+    back.style.display = 'none';
+    back3.style.display = 'flex';
 
     select.innerHTML = 'Select Mode:'
     courseSelected.innerHTML = 'Rancho Saguaro';
@@ -295,8 +278,8 @@ stone.onclick = function () {
     courses3.style.display = 'none';
     gameModes.style.display = 'flex';
 
-    back.hidden = true;
-    back4.hidden = false;
+    back.style.display = 'none';
+    back4.style.display = 'flex';
 
     select.innerHTML = 'Select Mode:';
     courseSelected.innerHTML = 'Stone Valley';
@@ -309,8 +292,8 @@ sea.onclick = function () {
     courses3.style.display = 'none';
     gameModes.style.display = 'flex';
 
-    back.hidden = true;
-    back4.hidden = false;
+    back.style.display = 'none';
+    back4.style.display = 'flex';
 
     select.innerHTML = 'Select Mode:'
     courseSelected.innerHTML = 'Sea Haven';
@@ -323,8 +306,8 @@ coyote.onclick = function () {
     courses3.style.display = 'none';
     gameModes.style.display = 'flex';
 
-    back.hidden = true;
-    back4.hidden = false;
+    back.style.display = 'none';
+    back4.style.display = 'flex';
 
     select.innerHTML = 'Select Mode:'
     courseSelected.innerHTML = 'Coyote Run';
@@ -344,8 +327,8 @@ mountain.onclick = function () {
     courses4.style.display = 'none';
     gameModes.style.display = 'flex';
 
-    back.hidden = true;
-    back5.hidden = false;
+    back.style.display = 'none';
+    back5.style.display = 'flex';
 
     select.innerHTML = 'Select Mode:';
     courseSelected.innerHTML = 'Mountain Springs';
@@ -358,8 +341,8 @@ anchor.onclick = function () {
     courses4.style.display = 'none';
     gameModes.style.display = 'flex';
 
-    back.hidden = true;
-    back5.hidden = false;
+    back.style.display = 'none';
+    back5.style.display = 'flex';
 
     select.innerHTML = 'Select Mode:';
     courseSelected.innerHTML = 'Anchor Cove';
@@ -372,8 +355,8 @@ scorpion.onclick = function () {
     courses4.style.display = 'none';
     gameModes.style.display = 'flex';
 
-    back.hidden = true;
-    back5.hidden = false;
+    back.style.display = 'none';
+    back5.style.display = 'flex';
 
     select.innerText = 'Select Mode:';
     courseSelected.innerText = 'Scorpion Bend';
@@ -396,12 +379,12 @@ strokes.onclick = function () {
         modeSelected.innerText = 'Stroke Play';
         select.style.display = 'none';
 
-        home.hidden = false;
-        back2.hidden = true;
-        back3.hidden = true;
-        back4.hidden = true;
-        back5.hidden = true;
-
+        
+        back.style.display = 'none';
+        back2.style.display = 'none';
+        back3.style.display = 'none';
+        back4.style.display = 'none';
+        back5.style.display = 'none';
         home.style.display = 'flex';
         results.mode = 'Stroke Play';
 }
@@ -415,11 +398,11 @@ speed.onclick = function () {
     modeSelected.innerText = 'Speed Run';
     select.style.display = 'none';
 
-    back2.hidden = true;
-    back3.hidden = true;
-    back4.hidden = true;
-    back5.hidden = true;
-    
+    back.style.display = 'none';
+    back2.style.display = 'none';
+    back3.style.display = 'none';
+    back4.style.display = 'none';
+    back5.style.display = 'none';
     home.style.display = 'flex';
     results.mode = 'Speed Run';
 
@@ -430,6 +413,7 @@ speed.onclick = function () {
 // back button functionality
 back.onclick = function () {
     games.style.display = 'flex';
+    home.style.display = 'FLEX';
     courses1.style.display = 'none';
     courses2.style.display = 'none';
     courses3.style.display = 'none';
@@ -437,7 +421,7 @@ back.onclick = function () {
 
     gameModes.style.display = 'none';
 
-    back.hidden = true;
+    back.style.display = 'none';
 
     select.innerHTML = 'Select Game:';
     gameSelected.innerHTML = '';
@@ -448,8 +432,8 @@ back2.onclick = function () {
     courses1.style.display = 'flex';
     gameModes.style.display = 'none';
 
-    back2.hidden = true;
-    back.hidden = false;
+    back2.style.display = 'none';
+    back.style.display = 'flex';
 
     select.innerHTML = 'Select Course:';
     courseSelected.innerHTML = '';
@@ -459,8 +443,8 @@ back3.onclick = function () {
     courses2.style.display = 'flex';
     gameModes.style.display = 'none';
 
-    back3.hidden = true;
-    back.hidden = false;
+    back3.style.display = 'none';
+    back.style.display = 'flex';
 
     select.innerHTML = 'Select Course:';
     courseSelected.innerHTML = '';
@@ -470,8 +454,8 @@ back4.onclick = function () {
     courses3.style.display = 'flex';
     gameModes.style.display = 'none';
 
-    back4.hidden = true;
-    back.hidden = false;
+    back4.style.display = 'none';
+    back.style.display = 'flex';
 
     select.innerHTML = 'Select Course:';
     courseSelected.innerHTML = '';
@@ -481,8 +465,8 @@ back5.onclick = function () {
     courses4.style.display = 'flex';
     gameModes.style.display = 'none';
 
-    back5.hidden = true;
-    back.hidden = false;
+    back5.style.display = 'none';
+    back.style.display = 'flex';
 
     select.innerHTML = 'Select Course:';
     courseSelected.innerHTML = '';
