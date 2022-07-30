@@ -198,7 +198,7 @@ button:active {
     justify-content: space-evenly;
 }
 #leaderBox {
-  display: none;
+  display: flex;
   justify-content: center;
 }
 #leader {
@@ -294,7 +294,9 @@ button:active {
 
 
 
-
+#unlocked {
+  margin-right: .5rem;
+}
 
 #scrollLock {
   display: none;
@@ -307,7 +309,7 @@ button:active {
   border-radius: 10%;
   box-shadow: 1px 1px 4px green, -.2px -.2px 2px green;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
   font-size: 4.5rem;
 }
 #scrollUnlock {
