@@ -1,8 +1,16 @@
+/* html elements */
+
+
+
 body {
-    display: flex-box;
+    display: block;
     background-color: #f1fcf1;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     overflow: hidden;
+}
+
+div {
+  text-shadow: 2px 2px 3px green, -.5px -.5px 1px green;
 }
 
 h1 {
@@ -10,7 +18,8 @@ h1 {
     font-size: 3em;
     color: #478547;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
+    text-shadow: 2px 2px 3px green, -.5px -.5px 1.3px green;
 }
 
 p {
@@ -18,21 +27,82 @@ p {
     font-size: 2em;
     color: #478547;
     justify-content: center;
+    text-shadow: 1px 1px 3px green, -.5px -.5px 1px green;
 }
+
 
 a {
   color: #478547;
 }
+a:hover {
+  color: white;
+}
+
+
+
+
+
+
+
+/* welcome section */
+
+
+
+
+
+
+
+#info {
+  display: none;
+  flex-direction: column;
+
+}
+#welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#name {
+  width: 10rem;
+  height: 2rem;
+  color: green;
+  font-size: 1.5rem;
+  text-align: center;
+}
+#nameSubmit {
+  width: 6rem;
+  height: 4rem;
+}
+#nameError {
+  font-size: 1rem;
+  text-shadow: 0 0 0;
+}
+
+
+
+
+
+
+/* menu button classes etc */
+
+
+
+
+
+
+
 
 .button {
     height: 6rem;
     width: 8rem;
     border: 1px solid #478547;
     border-radius: 1em;
-    background-color: #85E085;
+    background-color: linear-gradient(#85E085, green);
     color: #478547;
     font-size: 1em;
     margin: .05em .05em;
+    box-shadow: 3px 3px 5px green, -.5px -.5px 1px green;
 }
 
 .button:hover {
@@ -42,8 +112,8 @@ a {
 }
 
 .button:active {
-    height: 6rem;
-    width: 8rem;
+    height: 5.9rem;
+    width: 7.9rem;
 
 }
 
@@ -62,45 +132,123 @@ button:hover {
     background-color: #3c6f3c;
     color: white;
     cursor: pointer;
+
 }
 
 button:active {
-    height: 2.8;
-    width: 4.6;
     margin: .08em .08em;
 }
+#games {
+  width: 100%;
+  display: none;
+  justify-content: space-evenly;
+}
+
+
+
+
+#courses1 {
+  width: 100%;
+  display: none;
+  justify-content: space-evenly;
+}
+#courses2 {
+  width: 100%;
+  display: none;
+  justify-content: space-evenly;
+}
+#courses3 {
+  width: 100%;
+  display: none;
+  justify-content: space-evenly;
+}
+#courses4 {
+  width: 100%;
+  display: none;
+  justify-content: space-evenly;
+}
+
+
+#gameModes {
+  width: 100%;
+  display: none;
+  justify-content: space-evenly;
+}
+
+
 
 #buttons {
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 #leaderBox {
-  display: flex;
+  display: none;
   justify-content: center;
 }
 #leader {
     text-decoration: none;
     list-style: none;
 }
-#back, #back2, #back3, #back4, #back5, #back6 {
+#back, #back2, #back3, #back4, #back5, #home {
     position: fixed;
     top: 0;
     left: 0;
 }
+
+
+
+
+
+
+
+/* icon section from font awesome */
+
+
+
+#home {
+  color: #85E085;
+  font-size: 6rem;
+  text-shadow: 3px 3px 5px green, -.5px -.5px 1px green;
+}
+#home:hover {
+  color: #3c6f3c;
+  cursor: pointer;
+}
+#home:active {
+  color: #3c6f3c;
+  font-size: 5.9rem;
+}
+
+#golfball {
+  color: #3c6f3c;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+/* end icons */
+
+
+
 #scrollLock {
+  display: none;
   position: fixed;
-  text-align: center;
-  height: 2.5rem;
-  width: 4rem;
+  top: 0;
+  right: 0;
   z-index: 1;
+  box-shadow: 1px 1px 4px green, -.2px -.2px 2px green;
+  align-items: center;
+  justify-content: center;
 }
 #scrollUnlock {
+  display: none;
   position: fixed;
-  text-align: center;
-  height: 2.5rem;
-  width: 4rem;
+  top: 0;
+  right: 0;
   z-index: 2;
-
+  box-shadow: 1px 1px 4px green, -.2px -.2px 2px green;
+  align-items: center;
+  justify-content: center;
 }
 #scrollToggleBox {
   display: flex;
@@ -295,6 +443,14 @@ button:active {
 
 
 
+
+
+
+
+
+
+
+
   /* begin speed run section */
 
 
@@ -318,6 +474,7 @@ button:active {
     border-radius: 30%;
     font-size: 3rem;
     margin: 0 auto;
+    box-shadow: 3px 3px 7px green, -.5px -.5px 3px green;
   }
   #timeContainter {
     display: flex;
@@ -339,6 +496,13 @@ button:active {
   #totalTime {
     text-align: center;
   }
+#cooldown {
+  font-size: 1.4rem;
+  text-shadow: 0 0 0;
+}
+
+
+
 
 
 
@@ -347,6 +511,11 @@ button:active {
 
 
 /* end speed run section */
+
+
+
+
+
 
 
 
