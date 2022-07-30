@@ -4,6 +4,7 @@ const time = document.getElementById("time");
 const announce = document.getElementById("announce");
 const totalTimeDisplay = document.getElementById("totalTime");
 const speedRunDisplay = document.getElementById("speedRunDisplay");
+const cooldown = document.getElementById("cooldown");
 
 let min = 0;
 let sec = 0;
@@ -25,8 +26,14 @@ function startTimer() {
     timerCycle();
     theButton.innerText = "Lap";
     hole++;
+  } else if (sec < 5) {
+    cooldown.innerText = 'cooldown';
   } else if ((stoptime == false) & (hole <= 19 & sec > 4)) {
+    cooldown.innerText = '';
+
     postResults();
+
+    
     
     time.innerText += hole++ + " - " + timer.innerText + ' - ';
     const para = document.createElement("p");
@@ -40,7 +47,6 @@ function startTimer() {
       results.finalScore = timerTotal.innerText;
       theButton.innerHTML = "TIME!";
       stoptime = true;
-      theButton.style.display = "none";
       timer.style.display = "none";
       announce.innerText = "TIME!";
       downloadCSV.style.display = "flex";

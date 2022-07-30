@@ -7,19 +7,27 @@
         <script src="table.js" defer></script>
         <script src="totaltime.js" defer></script>
         <script src="timer.js" defer></script>
+        <script src="timer-message.js" defer></script>
         <script src="csv.js" defer></script>
+        <script src="https://kit.fontawesome.com/d7ac4707c0.js" crossorigin="anonymous" defer></script>
         
     </head>
 
     <body>
         <!--back buttons-->
-
+        
         <button class="button" id="back">Back</button>
+       
         <button class="button" id="back2">Back</button>
         <button class="button" id="back3">Back</button>
         <button class="button" id="back4">Back</button>
         <button class="button" id="back5">Back</button>
-        <button class="button" id="back6">Home</button>
+        
+        <i class="fa-solid fa-house fa-2x" id="home"></i>
+        
+
+        <!-- end back buttons-->
+
 
         <div id="leaderBox">
             <button><a href="leaderboard.html" id="leader">Leaderboard</a></button>
@@ -33,42 +41,74 @@
         
         <br>
 
-        <!-- end back buttons-->
 
-        <h1>Golden Tee Tracker</h1>
-        <p id="select">Select Game:</p>
-        <a href="leaderboard.html"></a>
+        <div id="info">
+            <h1>Golden Tee Tracker</h1>
+            <p id="select">Select Game:</p>
+            <p id="nameDis"></p>
+        </div>
+     
+                <!--submit name-->
+
+                <div id="welcomeText">
+                    <p>Welcome to the Golden Tee Tracker!</p>
+                    <p>Submit your name to continue:</p>
+                </div>
+
+                <div id="welcome">
+
+                    <i class="fa-solid fa-golf-ball-tee fa-2x" id="golfball"></i>
+                    <input type="text" id="name">
+                    <br>
+                    <button class="button" id="nameSubmit">Submit</button>
+                    <p id="nameError"></p>
+                </div>
 
         <!--game select buttons-->
 
-        <section id="buttons">
-            <button class="button" id="98">98</button>
-            <button class="button" id="99">99</button>
-            <button class="button" id="2K">2K</button>
-            <button class="button" id="classic">Classic</button>
+      
+            <div id="games">
+                <button class="button" id="98">98</button>
+                <button class="button" id="99">99</button>
+                <button class="button" id="2K">2K</button>
+                <button class="button" id="classic">Classic</button>
+            </div>
 
             <!--course select buttons-->
+
+
+            <div id="courses1">
             <button class="button" id="arbor">Arbor Hill</button>
             <button class="button" id="bayou">Bayou Bend</button>
             <button class="button" id="palm">Palm Grove</button>
+            </div>
+
+            <div id="courses2">
             <button class="button" id="aspen">Aspen Lake</button>
             <button class="button" id="coconut">Coconut Cove</button>
             <button class="button" id="rancho">Rancho Saguaro</button>
+            </div>
+
+            <div id="courses3">
             <button class="button" id="stone">Stone Valley</button>
             <button class="button" id="sea">Sea Haven</button>
             <button class="button" id="coyote">Coyote Run</button>
+            </div>
+
+            <div id="courses4">
             <button class="button" id="mountain">Mountain Springs</button>
             <button class="button" id="anchor">Anchor Cove</button>
             <button class="button" id="scorpion">Scorpion Bend</button>
+            </div>
+
 
             <!--game mode select buttons-->
-
+            <div id="gameModes">
             <button class="button" id="strokes">Stroke Play</button>
             <button class="button" id="speed">Speed Run</button>
-        </section>
-        <section>
-            
-        </section>
+            </div>
+
+
         <p id="gameSelected"></p>
         <p id="courseSelected"></p>
         <p id="modeSelected"></p>
@@ -76,6 +116,7 @@
         <p id="totalScoreFinal"></p>
         
 
+        <!--download button-->
 
         <button class="button" id="action">Download Results</button>
 
@@ -260,8 +301,11 @@
             <div id="stopwatch">
                 0:00
             </div>
+            <p id="cooldown"></p>
         </div>
 
+</html>
+<p style="display: none"><i class="fa-solid fa-coffee fa-xl"></i>hello</p>
       
         <p id="time"></p>
         <p id="totalTime"></p>
