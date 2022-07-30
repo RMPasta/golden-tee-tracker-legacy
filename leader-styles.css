@@ -1,0 +1,151 @@
+#home {
+    position: STICKY;
+    top: 0;
+    left: 0;
+    border-radius: .2em;
+    color: #85E085;
+    font-size: 6rem;
+}
+
+#home:hover {
+  
+    color:#478547;
+    cursor: pointer;
+
+}
+
+#home:active {
+    font-size: 5.95rem;
+}
+
+
+
+.highscoreWrapper {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  #highscoreOne {
+    background-color: #bbeebb;
+    grid-column: 1;
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    color: green;
+  }
+  #highscoreTwo {
+    background-color: #bbeebb;
+    grid-column: 2;
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    color: green;
+  }
+  #highscoreThree {
+    background-color: #bbeebb;
+    grid-column: 3;
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    color: green;
+  }
+  #highscoreFour {
+    background-color: #bbeebb;
+    grid-column: 1;
+    grid-row: 3 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    color: green;
+  }
+  #highscoreFive {
+    background-color: #bbeebb;
+    grid-column: 2;
+    grid-row: 3 / 5;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    color: green;
+  }
+  #highscoreSix {
+    background-color: #bbeebb;
+    grid-column: 3;
+    grid-row: 3 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    color: green;
+  }
+  #highscoreSeven {
+    background-color: #bbeebb;
+    grid-column: 1;
+    grid-row: 5 / 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    color: green;
+  }
+  #highscoreEight {
+    background-color: #bbeebb;
+    grid-column: 2;
+    grid-row: 5 / 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    color: green;
+  }
+  #highscoreNine {
+    background-color: #bbeebb;
+    grid-column: 3;
+    grid-row: 5 / 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    color: green;
+  }
+    #highscoreTen {
+    background-color: #bbeebb;
+    grid-column: 1;
+    grid-row: 7 / 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    color: green;
+    }
+    #highscoreEleven {
+    background-color: #bbeebb;
+    grid-column: 2;
+    grid-row: 7 / 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    color: green;
+    }
+    #highscoreTwelve {
+    background-color: #bbeebb;
+    grid-column: 3;
+    grid-row: 7 / 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    color: green;
+    }
+  
