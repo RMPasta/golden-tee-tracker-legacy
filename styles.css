@@ -233,7 +233,7 @@ button:active {
 #home {
   display: none;
   color: #85E085;
-  font-size: 6rem;
+  font-size: 6.9rem;
   text-shadow: 3px 3px 5px green, -.5px -.5px 1px green;
 }
 #home:hover {
@@ -363,7 +363,7 @@ button:active {
 
 
 .wrapper {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(10, minmax(0, 1fr));
     gap: 5px;
     grid-auto-rows: minmax(100px, auto);

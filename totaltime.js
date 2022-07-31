@@ -23,19 +23,25 @@ function timerCycleTotal() {
 
     
     
-      if (hole == 19 & parseInt(minTotal) < 9) {
+      if (hole == 19 & parseInt(minTotal) < 9 & parseInt(secTotal) < 30) {
     stopTimerTotal();
     nameDis.innerText = 'WTF WTF WTF ' + name.value.toUpperCase() + ', LEGENDARY PERFORMANCE!';
-  } else if (hole == 19 & parseInt(minTotal) < 10) {
+  } else if (hole == 19 & parseInt(minTotal) < 9 & parseInt(secTotal) < 30) {
     stopTimerTotal();
     nameDis.innerText = 'Woah! ' + name.value.toUpperCase() + ', you never cease to amaze.';
-}  else if (hole == 19 & parseInt(minTotal) > 11) {
+}  else if (hole == 19 & parseInt(minTotal) < 10) {
   stopTimerTotal();
-  nameDis.innerText = 'Bruh... ' + name.value.toUpperCase() + ', it might be time to hang up the clubs.';
-} else if (hole == 19 & parseInt(minTotal) > 10) {
+  nameDis.innerText = 'Ayyy ggs ' + name.value.toUpperCase() + '! nice goin\'.';
+} else if (hole == 19 & parseInt(minTotal) < 11 & parseInt(secTotal) < 30) {
   stopTimerTotal();
   nameDis.innerText = 'Damn, ' + name.value.toUpperCase() + '... Better luck next time.';
-}
+}  else if (hole == 19 & parseInt(minTotal) < 11) {
+  stopTimerTotal();
+  nameDis.innerText = 'Bruh... ' + name.value.toUpperCase() + ', it might be time to hang up the clubs.';
+} else if (hole == 19 & parseInt(minTotal) > 11) {
+  stopTimerTotal();
+  nameDis.innerText = 'RIP ' + name.value.toUpperCase() + '. Though you\'ve been rekt, you can maybe come back form this maybe.';
+} 
     
 
   if (stoptimeTotal == false) {

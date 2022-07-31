@@ -146,7 +146,7 @@ twoK.onclick = function () {
 
 classic.onclick = function () {
     games.style.display = 'none';
-    courses1.style.display = 'flex';
+    courses4.style.display = 'flex';
     back.style.display = 'flex';
     home.style.display = 'none';
 

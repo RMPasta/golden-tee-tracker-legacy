@@ -29,10 +29,10 @@ function startTimer() {
     timerCycle();
     theButton.innerText = "Lap";
     hole++;
-  } else if (sec < 5) {
+  } else if (sec < 5 & min < 1) {
     setTimeout('removeCooldown()', 5000 - sec * 1000)
     cooldown.innerText = '5 second cooldown';
-  } else if ((stoptime == false) & (hole <= 19 & sec > 4)) {
+  } else if ((stoptime == false) & (hole <= 19 & sec > 4 || min > 0)) {
     cooldown.innerText = '';
 
 
