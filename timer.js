@@ -31,7 +31,7 @@ function startTimer() {
     hole++;
   } else if (sec < 5) {
     setTimeout('removeCooldown()', 5000 - sec * 1000)
-    cooldown.innerText = 'cooldown';
+    cooldown.innerText = '5 second cooldown';
   } else if ((stoptime == false) & (hole <= 19 & sec > 4)) {
     cooldown.innerText = '';
 

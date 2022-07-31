@@ -560,9 +560,10 @@ button:active {
   }
   #time {
     display: flex;
-    float: left;
-    width: 45rem;
-    font-size: 2rem;
+    position: fixed;
+    left: 5rem;
+    top: 7rem;
+    font-size: 1.7rem;
   }
   #stopwatchTotal {
     justify-content: center;

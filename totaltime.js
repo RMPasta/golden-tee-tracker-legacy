@@ -22,11 +22,21 @@ function stopTimerTotal() {
 function timerCycleTotal() {
 
     
-    if (hole == 19 & min > 1) {
-        stopTimerTotal();
-        nameDis.innerText = 'Damn, ' + name.value.toUpperCase(); + '... Better luck next time.'
-        
-    }
+    
+      if (hole == 19 & parseInt(minTotal) < 9) {
+    stopTimerTotal();
+    nameDis.innerText = 'WTF WTF WTF ' + name.value.toUpperCase() + ', LEGENDARY PERFORMANCE!';
+  } else if (hole == 19 & parseInt(minTotal) < 10) {
+    stopTimerTotal();
+    nameDis.innerText = 'Woah! ' + name.value.toUpperCase() + ', you never cease to amaze.';
+}  else if (hole == 19 & parseInt(minTotal) > 11) {
+  stopTimerTotal();
+  nameDis.innerText = 'Bruh... ' + name.value.toUpperCase() + ', it might be time to hang up the clubs.';
+} else if (hole == 19 & parseInt(minTotal) > 10) {
+  stopTimerTotal();
+  nameDis.innerText = 'Damn, ' + name.value.toUpperCase() + '... Better luck next time.';
+}
+    
 
   if (stoptimeTotal == false) {
     secTotal = parseInt(secTotal);
