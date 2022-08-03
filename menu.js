@@ -42,7 +42,6 @@ let speed = document.getElementById('speed');
 let select = document.getElementById('select');
 let gameSelected = document.getElementById('gameSelected');
 let courseSelected = document.getElementById('courseSelected');
-let modeSelected = document.getElementById('modeSelected');
 let playersSelected = document.getElementById('playersSelected');
 let back = document.getElementById('back');
 let home = document.getElementById('home');
@@ -382,7 +381,6 @@ scorpion.onclick = function () {
 strokes.onclick = function () {
         table.style.display = 'grid';
         gameModes.style.display = 'none';
-        modeSelected.innerText = 'Stroke Play';
         select.style.display = 'none';
 
         
@@ -401,7 +399,6 @@ strokes.onclick = function () {
 speed.onclick = function () {
     speedRunDisplay.style.display = 'flex';
     gameModes.style.display = 'none';
-    modeSelected.innerText = 'Speed Run';
     select.style.display = 'none';
 
     back.style.display = 'none';
@@ -415,9 +412,7 @@ speed.onclick = function () {
     theButton.hidden = false;
     timerTotal.style.display = 'flex';
 
-    gameSelected.style.display = 'none';
-    courseSelected.style.display = 'none';
-    modeSelected.style.display = 'none';
+    
 
     nameDis.innerText = 'Good luck ' + name.value.toUpperCase() + '!';
 }     

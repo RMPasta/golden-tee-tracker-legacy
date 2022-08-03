@@ -1,6 +1,7 @@
 const timer = document.getElementById("stopwatch");
 const theButton = document.getElementById("theButton");
 const time = document.getElementById("time");
+const timeTwo = document.getElementById("timeTwo");
 const announce = document.getElementById("announce");
 const totalTimeDisplay = document.getElementById("totalTime");
 const speedRunDisplay = document.getElementById("speedRunDisplay");
@@ -26,25 +27,32 @@ function startTimer() {
 
   if (stoptime == true) {
     stoptime = false;
+
     timerCycle();
+    
     theButton.innerText = "Lap";
     hole++;
   } else if (sec < 5 & min < 1) {
     setTimeout('removeCooldown()', 5000 - sec * 1000)
     cooldown.innerText = '5 second cooldown';
-  } else if ((stoptime == false) & (hole <= 19 & sec > 4 || min > 0)) {
+  } else if ((stoptime == false) & (hole <= 19 & sec > 4 || hole <= 19 & min > 0)) {
     cooldown.innerText = '';
 
 
 
     postResults();
 
-    time.innerText += hole++ + " - " + timer.innerText + ' - ';
-    
-    
-    const para = document.createElement("p");
-    time.appendChild(para);
 
+    if (hole <= 9) {
+      time.innerText += ' ' + hole++ + " - " + timer.innerText;
+      const linebreak = document.createElement("br");
+      time.appendChild(linebreak);
+    } else if (hole > 9) {
+      timeTwo.innerText += ' ' + hole++ + " - " + timer.innerText;
+      const linebreak = document.createElement("br");
+      timeTwo.appendChild(linebreak);
+    }
+    
     resetTimer();
 
 
