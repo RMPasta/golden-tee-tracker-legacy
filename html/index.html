@@ -2,13 +2,16 @@
 <html>
     <head>
         <title>Golden Tee Tracker</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="menu.js" defer></script>
-        <script src="table.js" defer></script>
-        <script src="totaltime.js" defer></script>
-        <script src="timer.js" defer></script>
-        <script src="timer-message.js" defer></script>
-        <script src="csv.js" defer></script>
+        <link rel="stylesheet" href="../css/styles.css">
+        <script src="../js/menu.js" defer></script>
+        <script src="../js/table.js" defer></script>
+        <script src="../js/totaltime.js" defer></script>
+        <script src="../js/timer.js" defer></script>
+        <script src="../js/blitzOne.js" defer></script>
+        <script src="../js/blitzTwo.js" defer></script>
+        <script src="../js/blitzThree.js" defer></script>
+        <script src="../js/blitzFour.js" defer></script>
+        <script src="../js/csv.js" defer></script>
         <script src="https://kit.fontawesome.com/d7ac4707c0.js" crossorigin="anonymous" defer></script>
         
     </head>
@@ -30,7 +33,7 @@
 
 
         <div id="leaderBox">
-            <button><a href="leaderboard.html" id="leader">Leaderboard</a></button>
+            <button><a href="../html/leaderboard.html" id="leader">Leaderboard</a></button>
         </div>
 
         <div id='scrollToggleBox'>
@@ -41,13 +44,17 @@
         
         <br>
 
-
+        <h1 id="gtt">Golden Tee Tracker</h1>
         <div id="info">
-            <h1>Golden Tee Tracker</h1>
-            <p id="nameDis"></p>
-            <p id="select">Select Game:</p>
             
+            <p id="gameSelected"></p>
+            <p id="courseSelected"></p>
+            <p id="totalScoreFinal"></p>
         </div>
+        <div id="infoTwo">
+        <p id="nameDis"></p>
+        </div>
+        
      
                 <!--submit name-->
 
@@ -107,12 +114,17 @@
             <div id="gameModes">
             <button class="button" id="strokes">Stroke Play</button>
             <button class="button" id="speed">Speed Run</button>
+            <button class="button" id="blitz">Blitz Golf</button>
+            </div>
+
+            <div id="playerSelect">
+                <button class="button" id="pTwo">Two</button>
+                <button class="button" id="pThree">Three</button>
+                <button class="button" id="pFour">Four</button>
             </div>
 
 
-        <p id="gameSelected"></p>
-        <p id="courseSelected"></p>
-        <p id="totalScoreFinal"></p>
+        
         
 
         <!--download button-->
@@ -303,13 +315,29 @@
             <p id="cooldown"></p>
         </div>
 
-</html>
+
 <p style="display: none"><i class="fa-solid fa-coffee fa-xl"></i>hello</p>
       
         <p id="time"></p>
         <p id="timeTwo"></p>
         <p id="totalTime"></p>
         <p id="announce"></p>
+
+        <!-- end speed run section-->
+
+
+        <!-- begin blitz section -->
+        <div id="blitzSection">
+            <button id="playerOne" onclick="startTimerOne()">4:20</button>
+            <button id="playerTwo" onclick="startTimerTwo()">4:20</button>
+            <button id="playerThree" onclick="startTimerThree()">4:20</button>
+            <button id="playerFour" onclick="startTimerFour()">4:20</button>
+        </div>    
+        
+
+
+
+
     </body>
 
     <footer>
