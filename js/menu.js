@@ -43,6 +43,7 @@ let blitz = document.getElementById("blitz");
 let pTwo = document.getElementById("pTwo");
 let pThree = document.getElementById("pThree");
 let pFour = document.getElementById("pFour");
+let holeBlitzDisplay = document.getElementById("holeBlitzDisplay");
 
 let select = document.getElementById("select");
 let gameSelected = document.getElementById("gameSelected");
@@ -388,6 +389,7 @@ pTwo.onclick = function () {
   playerFour.style.display = "none";
   nameDis.style.display = "none";
   results.mode = "blitz2P";
+  holeBlitzDisplay.style.display = "flex";
 };
 pThree.onclick = function () {
   playerSelect.style.display = "none";
@@ -396,6 +398,7 @@ pThree.onclick = function () {
   playerFour.style.display = "none";
   nameDis.style.display = "none";
   results.mode = "blitz3P";
+  holeBlitzDisplay.style.display = "flex";
 };
 pFour.onclick = function () {
   playerSelect.style.display = "none";
@@ -404,6 +407,7 @@ pFour.onclick = function () {
   playerFour.style.display = "flex";
   nameDis.style.display = "none";
   results.mode = "blitz4P";
+  holeBlitzDisplay.style.display = "flex";
 };
 
 //end game mode select buttons

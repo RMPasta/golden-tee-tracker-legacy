@@ -1,9 +1,10 @@
 const timerThree = document.getElementById("playerThree");
+const timeThree = document.getElementById("blitzTimeThree");
 
 let minThree = 4;
 let secThree = 20;
 let stoptimeThree = true;
-let holeThree = 0;
+let holeThree = 1;
 
 function startTimerThree() {
   if (stoptimeThree == true) {
@@ -25,11 +26,11 @@ function stopTimerThree() {
 
 function timerCycleThree() {
   if (stoptimeThree == false) {
-    secTThree = parseInt(secThree);
+    secThree = parseInt(secThree);
     minThree = parseInt(minThree);
     if (secThree > 0) {
       secThree = secThree - 1;
-    } else {
+    } else if (minThree > 0) {
       minThree = minThree - 1;
       secThree = secThree + 59;
     }
@@ -39,10 +40,11 @@ function timerCycleThree() {
     }
 
     if (minThree === 0 && secThree == 0) {
-      timerThree.innerText = "TIME";
+      timeThree.innerText = "TIME";
+      currentHoleThree.innerText = holeBlitz.toString();
     }
 
-    timerThree.innerText = minThree + ":" + secThree;
+    timeThree.innerText = minThree + ":" + secThree;
 
     setTimeout("timerCycleThree()", 1000);
   }

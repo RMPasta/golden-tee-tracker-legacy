@@ -1,9 +1,10 @@
 const timerTwo = document.getElementById("playerTwo");
-
+const timeTwoTwo = document.getElementById("blitzTimeTwo");
+//named TwoTwo due to conflict with the totaltime.js naming
 let minTwo = 4;
 let secTwo = 20;
 let stoptimeTwo = true;
-let holeTwo = 0;
+let holeTwo = 1;
 
 function startTimerTwo() {
   if (stoptimeTwo == true) {
@@ -29,7 +30,7 @@ function timerCycleTwo() {
     minTwo = parseInt(minTwo);
     if (secTwo > 0) {
       secTwo = secTwo - 1;
-    } else {
+    } else if (minTwo > 0) {
       minTwo = minTwo - 1;
       secTwo = secTwo + 59;
     }
@@ -39,10 +40,11 @@ function timerCycleTwo() {
     }
 
     if (minTwo === 0 && secTwo == 0) {
-      timerTwo.innerText = "TIME";
+      timeTwoTwo.innerText = "TIME";
+      currentHoleTwo.innerText = holeBlitz.toString();
     }
 
-    timerTwo.innerText = minTwo + ":" + secTwo;
+    timeTwoTwo.innerText = minTwo + ":" + secTwo;
 
     setTimeout("timerCycleTwo()", 1000);
   }

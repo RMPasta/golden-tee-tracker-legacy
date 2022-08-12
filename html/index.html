@@ -327,11 +327,38 @@
 
 
         <!-- begin blitz section -->
+        <div id="holeBlitzDisplay">
+            <button class="button" onclick="holeMade()" id="holeButton">HOLE</button>
+        </div>
         <div id="blitzSection">
-            <button id="playerOne" onclick="startTimerOne()">4:20</button>
-            <button id="playerTwo" onclick="startTimerTwo()">4:20</button>
-            <button id="playerThree" onclick="startTimerThree()">4:20</button>
-            <button id="playerFour" onclick="startTimerFour()">4:20</button>
+            <button id="playerOne" onclick="startTimerOne()">
+                <p id="currentHoleOne">1</p>
+                <div id="blitzTimeOne">
+                4:20
+                </div>
+                <p id="playerBlitz">Player 1</p>
+            </button>
+            <button id="playerTwo" onclick="startTimerTwo()">
+                <p id="currentHoleTwo">1</p>
+                <div id="blitzTimeTwo">
+                4:20
+                </div>
+                <p id="playerBlitz">Player 2</p>
+            </button>
+            <button id="playerThree" onclick="startTimerThree()">
+                <p id="currentHoleThree">1</p>
+                <div id="blitzTimeThree">
+                4:20
+                </div>
+                <p id="playerBlitz">Player 3</p>
+            </button>
+            <button id="playerFour" onclick="startTimerFour()">
+                <p id="currentHoleFour">1</p>
+                <div id="blitzTimeFour">
+                4:20
+                </div>
+                <p id="playerBlitz">Player 4</p>
+            </button>
         </div>    
         
 
