@@ -2,7 +2,7 @@
 
 This is a SPA (unless you include the leaderboard page) that tracks golden tee results. 
 Built with vanilla JavaScript.
-It also introduces a third party game mode: Speed Runs.
+It also introduces a third party game mode built by me: Speed Runs.
 This app unlocks speed runs in golden tee, trying to finish 18 holes as fast as possible.
 
 For now focusing on the speed run section and then working more on strokeplay.
